@@ -220,11 +220,7 @@ exports.metalsmith = function() {
       "/ruuvitag-shields" : "/datasheets/photon-shields",
       "/shields" : "/datasheets/ruuvitag-shields",
       "/ruuvitag/hardware" : "/datasheets/photon-datasheet"
-    }))
-    .use(msIf(
-      environment !== 'development',
-      compress({overwrite: true})
-    ));
+    }));
 
   return metalsmith;
 };
