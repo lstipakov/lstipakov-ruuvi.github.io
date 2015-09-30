@@ -18,7 +18,7 @@ When you're ready to reprogram your device, head over to our IDE:
 
 [Ruuvi Build >](https://build.ruuvi.io)
 
-Creating an account is a simple one-step process.  When presented with the login screen, simply enter your email address (careful!), and desired account password.  Press the big friendly "Sign Up" button, and you'll reach the Ruuvi Build home page.
+Creating an account is a simple one-step process.  When presented with the login screen, simply enter your email address (careful!), and desired account password.  Press the big friendly "Sign Up" button, and you'll reach the Ruuvi Build home page..
 
 ![Ruuvi Build](/assets/images/ide-login.png)
 
