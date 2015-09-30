@@ -1,0 +1,323 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Hackathon</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+          <div class="dropdown">
+            <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="im-devices-icon"></i>
+                RuuviTag
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="/guide/getting-started/hackathon/ruuvitag/">RuuviTag</a></li>
+              <li><a href="/guide/getting-started/hackathon/ruuvitracker/">RuuviTracker</a></li>
+            </ul>
+          </div>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/getting-started/hackathon.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level " data-level="1.4">
+                    <a href="/guide/getting-started/modes">Device Modes</a>
+                </li>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/tinker">Tinker &amp; Mobile App</a>
+                </li>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level " data-level="1.9">
+                    <a href="/guide/getting-started/contributing">Open Source</a>
+                </li>
+                <li class="top-level active" data-level="1.10">
+                    <span>Hackathon</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="setup-VRZI"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#setup" data-menu-href="setup-VRZI">Setup</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="making-an-account-zeYZ"><a href="#making-an-account" data-menu-href="making-an-account-zeYZ">Making an Account</a></li>
+                                <li data-secondary-nav="claiming-and-connecting-eGoi"><a href="#claiming-and-connecting" data-menu-href="claiming-and-connecting-eGoi">Claiming and Connecting</a></li>
+                                <li data-secondary-nav="ruuvi-dev-6qGH"><a href="#ruuvi-dev" data-menu-href="ruuvi-dev-6qGH">Ruuvi Dev</a></li>
+                                <li data-secondary-nav="github-bKCM"><a href="#github" data-menu-href="github-bKCM">GitHub</a></li>
+                                <li data-secondary-nav="mobile-hkVs"><a href="#mobile" data-menu-href="mobile-hkVs">Mobile</a></li>
+                                <li data-secondary-nav="connecting-to-other-services-ZtKM"><a href="#connecting-to-other-services" data-menu-href="connecting-to-other-services-ZtKM">Connecting to Other Services</a></li>
+                            </ul>
+                        <li class="middle-level" data-nav="now-do-stuff--nvv1"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#now-do-stuff-" data-menu-href="now-do-stuff--nvv1">Now Do Stuff!</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="view-functions-JaND"><a href="#view-functions" data-menu-href="view-functions-JaND">View Functions</a></li>
+                                <li data-secondary-nav="view-variables-tQzM"><a href="#view-variables" data-menu-href="view-variables-tQzM">View Variables</a></li>
+                                <li data-secondary-nav="flash-your-own-code-Ud2x"><a href="#flash-your-own-code" data-menu-href="flash-your-own-code-Ud2x">Flash Your Own Code</a></li>
+                                <li data-secondary-nav="pass-strings-NOGI"><a href="#pass-strings" data-menu-href="pass-strings-NOGI">Pass Strings</a></li>
+                                <li data-secondary-nav="add-libraries-P0es"><a href="#add-libraries" data-menu-href="add-libraries-P0es">Add Libraries</a></li>
+                                <li data-secondary-nav="other-resources-dQQH"><a href="#other-resources" data-menu-href="other-resources-dQQH">Other Resources</a></li>
+                            </ul>
+                      </ul>
+                    </div>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="2.2">
+                    <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>
+                </li>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level " data-level="3.6">
+                    <a href="/guide/how-to-build-a-product/mobile-app">Building your own mobile app (iOS and Android)</a>
+                </li>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#hackathoning-with-ruuvi" data-href="hackathoning-with-ruuvi-jQSt">Hackathoning with Ruuvi<a href="#hackathoning-with-ruuvi" class="header-permalinks" data-menu-href="hackathoning-with-ruuvi-jQSt"><i class="ion-link"></i></a></h1><p>If you're at a hackathon, you'll want to get started with Ruuvi, and fast! Here's some quick tips to get you up and running ASAP.</p>
+<p>We'll go over how to set up your RuuviTag, then go into some other tools you should install and features you should be aware of to get the most out of your hackathoning.</p>
+<h2 id="#setup" data-href="setup-VRZI">Setup<a href="#setup" class="header-permalinks" data-menu-href="setup-VRZI"><i class="ion-link"></i></a></h2><h3 id="#making-an-account" data-href="making-an-account-zeYZ">Making an Account<a href="#making-an-account" class="header-permalinks" data-menu-href="making-an-account-zeYZ"><i class="ion-link"></i></a></h3><p>The first step, if you don't already have one, is to <a href="http://build.ruuvi.io/login">make an account</a>. If you are the only one working on the firmware for this project, you can make an account with your personal email and a personal password. If you are working on a team and multiple people need to access the device, it may be a good idea to claim the device with a shared team email and password.</p>
+<h3 id="#claiming-and-connecting" data-href="claiming-and-connecting-eGoi">Claiming and Connecting<a href="#claiming-and-connecting" class="header-permalinks" data-menu-href="claiming-and-connecting-eGoi"><i class="ion-link"></i></a></h3><p>Once you have your account, it is time to claim your RuuviTag to your account and get started coding. You'll be doing this with your iOS or Android device. Before you get started, examine the packaging that your Photon, Photon Kit, or Internet Button came in. You'll see a barcode like the one below. The barcode has a four-digit code (outlined in blue below) in the third part of the alphanumeric sequence.</p>
+<p><img src="/assets/images/ruuvitag-barcode.jpg" alt="RuuviTag Barcode"></p>
+<p>In this case, you can see that four-digit code is <code>GG9J</code>.</p>
+<p>During your smartphone setup, this code will appear after the word <code>RuuviTag</code> in your Photon's Wi-Fi network:</p>
+<p><img src="/assets/images/ruuvitag-wifi-ios.jpg" alt="RuuviTag Wi-Fi"></p>
+<p>In this iOS screenshot, you can see two RuuviTags online. If you see this while you're setting up your PHoton, it just means you need to pick the Photon with your correct barcode (in this case, either <code>JPXH</code> or <code>X929</code>).</p>
+<p>Continue to set up your RuuviTag <a href="/guide/getting-started/start/ruuvitag/#prerequisites-for-setup">with your smartphone</a>. Follow the instruction on the Ruuvi app to get your Photon online and claim it to the account you set up earlier.</p>
+<h3 id="#ruuvi-dev" data-href="ruuvi-dev-6qGH">Ruuvi Dev<a href="#ruuvi-dev" class="header-permalinks" data-menu-href="ruuvi-dev-6qGH"><i class="ion-link"></i></a></h3><p>Although the <a href="http://build.ruuvi.io">online IDE</a> will allow you to flash code to your devices, we also suggest getting <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>, the local IDE, for hackathons. It has a nice interface for monitoring Spark.variables and running Spark.functions without the CLI, which means you can develop faster.</p>
+<p>Download Ruuvi Dev <a href="https://www.ruuvi.io/dev">here</a>.</p>
+<p>Ruuvi Dev has a lot of wonderful features. Namely, you can monitor cloud variables, cloud functions, and serial output from your devices via the Devices part of the menu bar. More on that in the <a href="/guide/getting-started/hackathon/#now-do-stuff-">next section</a>.</p>
+<h3 id="#github" data-href="github-bKCM">GitHub<a href="#github" class="header-permalinks" data-menu-href="github-bKCM"><i class="ion-link"></i></a></h3><p>If you plan to share code and develop with other team members, we recommend that you get a <a href="http://github.com">GitHub account</a>. It's great for code sharing and will help you take advantage of your dev time.</p>
+<p>Here's a <a href="http://rogerdudler.github.io/git-guide/">basic guide on how to git</a> for complete newcomers.</p>
+<p>You can develop code, test it on your device, and push it to your repo. You and other team members can work on different features of your project on separate branches, develop and test separately, and merge features back into the master branch when they are finished.</p>
+<p><strong>Ruuvi Dev does not play well with folder hierarchies.</strong> If you are including libraries in your repo, keep them in the same folder as the <code>.ino</code> file you plan to compile!</p>
+<h3 id="#mobile" data-href="mobile-hkVs">Mobile<a href="#mobile" class="header-permalinks" data-menu-href="mobile-hkVs"><i class="ion-link"></i></a></h3><p>Building a mobile app to hook up with a Ruuvi device? Check out our guide on <a href="/guide/how-to-build-a-product/mobile-app">building mobile apps</a>.</p>
+<p>You can also read the reference for <a href="/reference/ios">iOS</a> and <a href="/reference/android">Android</a> SDKs, and check out the <a href="http://community.ruuvi.io/c/mobile">mobile section of the community</a> to ask for help and give feedback!</p>
+<h3 id="#connecting-to-other-services" data-href="connecting-to-other-services-ZtKM">Connecting to Other Services<a href="#connecting-to-other-services" class="header-permalinks" data-menu-href="connecting-to-other-services-ZtKM"><i class="ion-link"></i></a></h3><p>If you want to hook up different platforms quickly and without much code, try using <a href="/guide/tools-and-features/ifttt/">our IFTTT integration</a>. It's a simple way to connect your Ruuvi device to email, text message, phone location, Twitter, Facebook, and more.</p>
+<p>If you're looking to hit an API not listed in IFTTT and you have a little more experience with coding, try <a href="/guide/tools-and-features/webhooks">webhooks</a> instead.</p>
+<h2 id="#now-do-stuff-" data-href="now-do-stuff--nvv1">Now Do Stuff!<a href="#now-do-stuff-" class="header-permalinks" data-menu-href="now-do-stuff--nvv1"><i class="ion-link"></i></a></h2><h3 id="#view-functions" data-href="view-functions-JaND">View Functions<a href="#view-functions" class="header-permalinks" data-menu-href="view-functions-JaND"><i class="ion-link"></i></a></h3><p>Open up Ruuvi Dev and go to the Particle menu. Select your device with <code>Select device</code>. Then select <code>Show cloud functions</code>.</p>
+<p>A menu will appear on the lower half of the screen. It should have four functions: digitalwrite, digitalread, analogwrite, and analogread. These are the Tinker functions that are defaulted to your device before you flash your own code. Check out the <a href="/guide/getting-started/tinker">Tinker docs</a> for more info. You should be able to send commands to your device by identifying the pin and, for <code>write</code> functions, any necessary info. For example:</p>
+<ul>
+<li><code>D7,HIGH</code> for digitalwrite</li>
+<li><code>D7</code> for digitalread</li>
+<li><code>A0,100</code> for analogwrite</li>
+<li><code>A0</code> for analogread</li>
+</ul>
+<p>Try it out!</p>
+<h3 id="#view-variables" data-href="view-variables-tQzM">View Variables<a href="#view-variables" class="header-permalinks" data-menu-href="view-variables-tQzM"><i class="ion-link"></i></a></h3><p>In addition to the <code>Show cloud function</code> ability, there are other elements of Ruuvi Dev that you may find helpful:</p>
+<p>If you go to the Ruuvi menu you will also see <code>Show cloud variables</code>. This will allow you to see any variables you register with <a href="/reference/firmware/#spark-variable-">Spark.variable</a>.</p>
+<p>You can also monitor any <a href="/reference/firmware/#serial">serial output</a> with the <code>Show serial monitor</code> command. Make sure the proper device is selected through <code>Ruuvi</code> &gt; <code>Select device</code> when you do this.</p>
+<h3 id="#flash-your-own-code" data-href="flash-your-own-code-Ud2x">Flash Your Own Code<a href="#flash-your-own-code" class="header-permalinks" data-menu-href="flash-your-own-code-Ud2x"><i class="ion-link"></i></a></h3><p>Although Tinker can be really useful in early stages, we're sure you'll want to put your real code on your device at some point.</p>
+<p>For maximum sharability, make a <a href="https://help.github.com/articles/create-a-repo/">repo on github</a> for your shared code. Hook up to this repo by using <code>git clone</code> on the clone URL. Open Ruuvi Dev and navigate to the repo you just cloned. Make sure you have a single folder that will hold all of your .ino files and libraries-- the current version of Particle Dev gets confused when libraries are placed in subdirectories.</p>
+<p>Note that now that you are in a GitHub repo, you can use some of the functions in Ruuvi Dev that play nicely with git. Access these in the <code>Packages</code> menu:</p>
+<p><img src="/assets/images/dev-packages-github.png" alt="Ruuvi Dev Github Packages"></p>
+<p>Now you can compile and flash your first <code>.ino</code> file from Ruuvi Dev. You are welcome to take any of <a href="/guide/getting-started/examples/">these examples</a> as a first try and flash it to your device by clicking the lightning bolt in the upper right corner. The examples explain how Variable, Function, Publish, and Subscribe are used, but documentation on coding these cloud-exposed elements is available <a href="/reference/firmware/#cloud-functions">here</a>. Check out <a href="/guide/getting-started/hackathon/#tips-and-tricks">Tips and Tricks</a> for some of the subtleties of coding these functions.</p>
+<h3 id="#pass-strings" data-href="pass-strings-NOGI">Pass Strings<a href="#pass-strings" class="header-permalinks" data-menu-href="pass-strings-NOGI"><i class="ion-link"></i></a></h3><p>In the <a href="/reference/firmware/#spark-function-">quintessential example</a> for Spark Function, we are calling a brewCoffee function with the argument "coffee". This is nice if we have an array of choices we want to identify with strings, but what if we want to pass <code>int</code> data to our <code>Spark.function</code>?</p>
+<p>If you want to use <code>int</code> data from a <code>String</code>, you can create a <code>char</code> array to hold the <code>String</code> command, then use <code>atoi</code> to change this into an <code>int</code> value. Check out this example for setting the brightness of an LED.</p>
+<pre><code>void setup() {
+    Spark.function("brightness", setBrightness);
+}
+
+int setBrightness(String command) {
+    if (command) {
+        char inputStr[64];
+        command.toCharArray(inputStr,64);
+        int value = atoi(inputStr);
+        analogWrite(led,value);
+        return value;
+    }
+    else {
+        return 0;
+    }
+}
+</code></pre><p>Sometimes you want to send multiple values through a <code>Spark.function</code>. If you want to do that, use <code>strtok</code>. Here's an example of a <code>Spark.function</code> you could use to set the color of an RGB LED.</p>
+<pre><code>void setup() {
+    Spark.function("color", setColor);
+}
+
+int setColor(String command) {
+    if (command) {
+        char inputStr[64];
+        command.toCharArray(inputStr,64);
+        char *p = strtok(inputStr,",");
+        int red = atoi(p);
+        p = strtok(NULL,",");
+        int grn = atoi(p);
+        p = strtok(NULL,",");
+        int blu = atoi(p);
+        p = strtok(NULL,",");
+        b.allLedsOn(red,grn,blu);
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+</code></pre><h3 id="#add-libraries" data-href="add-libraries-P0es">Add Libraries<a href="#add-libraries" class="header-permalinks" data-menu-href="add-libraries-P0es"><i class="ion-link"></i></a></h3><p>If you want to add a library, you can search in the Libraries tab of <a href="http://build.ruuvi.io">Ruuvi Build</a>. To include this in a dev app, download a fork of the library to be included in your app. You can get to the repo by clicking the GitHub icon next to the library's name:</p>
+<p><img src="/assets/images/build-library-github.png" alt="Libraries in Build"></p>
+<p>Note that some libraries may not yet be updated for the RuuviTag.</p>
+<h3 id="#other-resources" data-href="other-resources-dQQH">Other Resources<a href="#other-resources" class="header-permalinks" data-menu-href="other-resources-dQQH"><i class="ion-link"></i></a></h3><p>Happy hacking! If you get stuck, try out:</p>
+<ul>
+<li><a href="http://docs.ruuvi.io">These docs</a>, specifically the ones referring to the kit you have (<a href="/guide/getting-started/examples">standard examples</a> or <a href="/guide/getting-started/button">Internet Button docs</a>)</li>
+<li><a href="http://community.ruuvi.io">The Ruuvi Community</a></li>
+<li><a href="http://support.ruuvi.io">The Ruuvi Support Page</a></li>
+</ul>
+<p>Best of luck!</p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/getting-started/contributing" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/getting-started/contributing" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+</body>
+</html>

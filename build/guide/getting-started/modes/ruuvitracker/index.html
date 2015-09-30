@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Device Modes</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+          <div class="dropdown">
+            <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="im-devices-icon"></i>
+                RuuviTracker
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="/guide/getting-started/modes/ruuvitag/">RuuviTag</a></li>
+              <li><a href="/guide/getting-started/modes/ruuvitracker/">RuuviTracker</a></li>
+            </ul>
+          </div>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/getting-started/modes.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level active" data-level="1.4">
+                    <span>Device Modes</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="connected-MmwY"><a href="#connected" data-menu-href="connected-MmwY">Connected</a></li>
+                        <li class="middle-level" data-nav="flashing-fmYD"><a href="#flashing" data-menu-href="flashing-fmYD">Flashing</a></li>
+                        <li class="middle-level" data-nav="looking-for-internet-6D2C"><a href="#looking-for-internet" data-menu-href="looking-for-internet-6D2C">Looking For Internet</a></li>
+                        <li class="middle-level" data-nav="listening-mode-n0LR"><a href="#listening-mode" data-menu-href="listening-mode-n0LR">Listening Mode</a></li>
+                        <li class="middle-level" data-nav="wifi-network-reset-5bWU"><a href="#wifi-network-reset" data-menu-href="wifi-network-reset-5bWU">Wifi Network Reset</a></li>
+                        <li class="middle-level" data-nav="factory-reset-LPN5"><a href="#factory-reset" data-menu-href="factory-reset-LPN5">Factory Reset</a></li>
+                        <li class="middle-level" data-nav="dfu-mode-device-firmware-upgrade--xEJJ"><a href="#dfu-mode-device-firmware-upgrade-" data-menu-href="dfu-mode-device-firmware-upgrade--xEJJ">DFU Mode (Device Firmware Upgrade)</a></li>
+                        <li class="middle-level" data-nav="red-flash-sos-nebK"><a href="#red-flash-sos" data-menu-href="red-flash-sos-nebK">Red Flash SOS</a></li>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/tinker">Tinker &amp; Mobile App</a>
+                </li>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level " data-level="1.9">
+                    <a href="/guide/getting-started/contributing">Open Source</a>
+                </li>
+                <li class="top-level " data-level="1.10">
+                    <a href="/guide/getting-started/hackathon">Hackathon</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="2.2">
+                    <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>
+                </li>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level " data-level="3.6">
+                    <a href="/guide/how-to-build-a-product/mobile-app">Building your own mobile app (iOS and Android)</a>
+                </li>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#device-modes" data-href="device-modes-uDSQ">Device Modes<a href="#device-modes" class="header-permalinks" data-menu-href="device-modes-uDSQ"><i class="ion-link"></i></a></h1><p>Now that we've gone over connecting your device, we're going to review the different modes for your RuuviTracker or RuuviTag. We suggest that you loop through this section, putting your device in the different listed modes to familiarize yourself with them.</p>
+<h3 id="#connected" data-href="connected-MmwY">Connected<a href="#connected" class="header-permalinks" data-menu-href="connected-MmwY"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZU92D9X9ge/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>When breathing cyan, your device is happily connected to the internet. When it is in this mode, you can call functions and flash code.</p>
+<h3 id="#flashing" data-href="flashing-fmYD">Flashing<a href="#flashing" class="header-permalinks" data-menu-href="flashing-fmYD"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZU9LDuVKnr/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>Your device is currently loading an app or updating its firmware. Triggered by a firmware update or by flashing code from Ruuvi Dev or Particle Build.</p>
+<h3 id="#looking-for-internet" data-href="looking-for-internet-6D2C">Looking For Internet<a href="#looking-for-internet" class="header-permalinks" data-menu-href="looking-for-internet-6D2C"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZU6zBzpW6U/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>Your device is trying to find the internet. If you already entered your wifi credentials, give your device a few seconds to connect and start breathing cyan. If you haven't yet connected your device to wifi, then set your device to <a href="/ruuvitracker/modes/#ruuvitracker-modes-listening-mode">Listening Mode</a>. If your RuuviTracker continuously flashes green and won't stop, then try doing a <a href="https://community.ruuvi.io/t/spark-core-common-issues/12383">full firmware update</a>.</p>
+<h3 id="#listening-mode" data-href="listening-mode-n0LR">Listening Mode<a href="#listening-mode" class="header-permalinks" data-menu-href="listening-mode-n0LR"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZU6YiK20Hl/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>When your device is in Listening Mode, it is waiting for your input to connect to the wifi. Your device needs to be in Listening Mode in order to begin connecting with the Mobile App or over USB.</p>
+<div class="iframe-wrapper"><iframe src="https://vine.co/v/eZUgHYYrYgl/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>To put your device in Listening Mode, hold the <code>MODE</code> button for three seconds, until the RGB LED begins flashing blue.</p>
+<h3 id="#wifi-network-reset" data-href="wifi-network-reset-5bWU">Wifi Network Reset<a href="#wifi-network-reset" class="header-permalinks" data-menu-href="wifi-network-reset-5bWU"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZU6expA5bA/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>To erase the stored wifi networks on your device, hold the <code>MODE</code> button for about ten seconds, until the RGB LED flashes blue rapidly.</p>
+<h3 id="#factory-reset" data-href="factory-reset-LPN5">Factory Reset<a href="#factory-reset" class="header-permalinks" data-menu-href="factory-reset-LPN5"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZU6XdrYbd5/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>A factory reset restores the firmware on the device to the default Tinker app and clears all your Wi-Fi credentials.</p>
+<p>Procedure:</p>
+<p>The procedure is same as the one described above (DFU Mode), but in this case you should continue holding down the MODE button until you see the device change from flashing yellow to flashing white. Then release the button.  The device should begin after the factory reset is complete.</p>
+<ol>
+<li>Hold down BOTH buttons</li>
+<li>Release only the RST button, while holding down the MODE button.</li>
+<li>Wait for the LED to start flashing yellow (continue to hold the MODE button)</li>
+<li>The LED will turn solid white (continue to hold the MODE button)</li>
+<li>Finally, the LED will turn blink white rapidly</li>
+<li>Release the MODE button</li>
+</ol>
+<h3 id="#dfu-mode-device-firmware-upgrade-" data-href="dfu-mode-device-firmware-upgrade--xEJJ">DFU Mode (Device Firmware Upgrade)<a href="#dfu-mode-device-firmware-upgrade-" class="header-permalinks" data-menu-href="dfu-mode-device-firmware-upgrade--xEJJ"><i class="ion-link"></i></a></h3><div class="iframe-wrapper"><iframe src="https://vine.co/v/eZUgeu0r639/embed/simple" width="320" height="320" frameborder="0"></iframe></div>
+
+<p>If you wish to program a device with a custom firmware via USB, you'll need to use this mode. This mode triggers the on-board bootloader that accepts firmware binary files via the <a href="https://s3.amazonaws.com/spark-assets/dfu-util-0.8-binaries.tar.xz">dfu-utility.</a></p>
+<p>Installation tutorial can be found <a href="/ruuvitracker/cli/#installing-advanced-install">here.</a></p>
+<p>Procedure:</p>
+<ol>
+<li>Hold down BOTH buttons</li>
+<li>Release only the RST button, while holding down the MODE button.</li>
+<li>Wait for the LED to start flashing yellow</li>
+<li>Release the MODE button</li>
+</ol>
+<p>The device now is in the DFU mode.</p>
+<h3 id="#red-flash-sos" data-href="red-flash-sos-nebK">Red Flash SOS<a href="#red-flash-sos" class="header-permalinks" data-menu-href="red-flash-sos-nebK"><i class="ion-link"></i></a></h3><p>Is your device flashing red? Oh no!</p>
+<p>A pattern of more than 10 red flashes is caused by the firmware crashing. The pattern is 3 short flashes, 3 long flashes, 3 short flashes (SOS pattern), followed by a number of flashes that depend on the error, then the SOS pattern again.</p>
+<p><a href="#factory-reset">Perform a factory reset</a>, tweak your firmware and try again!</p>
+<p>There are a number of other red flash codes that may be expressed after the SOS blinks:</p>
+<p>#1 Hard fault</p>
+<p>#2 Non-maskable interrupt fault</p>
+<p>#3 Memory Manager fault</p>
+<p>#4 Bus fault</p>
+<p>#5 Usage fault</p>
+<p>#6 Invalid length</p>
+<p>#7 Exit</p>
+<p>#8 Out of heap memory</p>
+<p>#9 SPI over-run</p>
+<p>#10 Assertion failure</p>
+<p>#11 Invalid case</p>
+<p>#12 Pure virtual call</p>
+<p>Don't forget that the <a href="https://community.ruuvi.io">community forum is always there to help</a>.</p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/getting-started/connect" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/getting-started/tinker" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/getting-started/connect" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/getting-started/tinker" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+</body>
+</html>

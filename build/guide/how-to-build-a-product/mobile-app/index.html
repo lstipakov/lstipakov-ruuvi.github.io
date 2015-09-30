@@ -1,0 +1,387 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Building your own mobile app (iOS and Android)</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/how-to-build-a-product/mobile-app.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section ">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level " data-level="1.4">
+                    <a href="/guide/getting-started/modes">Device Modes</a>
+                </li>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/tinker">Tinker &amp; Mobile App</a>
+                </li>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level " data-level="1.9">
+                    <a href="/guide/getting-started/contributing">Open Source</a>
+                </li>
+                <li class="top-level " data-level="1.10">
+                    <a href="/guide/getting-started/hackathon">Hackathon</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="2.2">
+                    <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>
+                </li>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section active-section">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level active" data-level="3.6">
+                    <span>Building your own mobile app (iOS and Android)</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="prerequisites-for-building-amp-deploying-mobile-apps-IhuE"><a href="#prerequisites-for-building-amp-deploying-mobile-apps" data-menu-href="prerequisites-for-building-amp-deploying-mobile-apps-IhuE">Prerequisites for Building &amp; Deploying Mobile Apps</a></li>
+                        <li class="middle-level" data-nav="two-tier-sdk-TDdz"><a href="#two-tier-sdk" data-menu-href="two-tier-sdk-TDdz">Two-tier SDK</a></li>
+                        <li class="middle-level" data-nav="how-to-get-started--FyXS"><a href="#how-to-get-started-" data-menu-href="how-to-get-started--FyXS">How To Get Started?</a></li>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#building-your-own-mobile-app" data-href="building-your-own-mobile-app-damk">Building your own Mobile App<a href="#building-your-own-mobile-app" class="header-permalinks" data-menu-href="building-your-own-mobile-app-damk"><i class="ion-link"></i></a></h1><p>While using your RuuviTag, you've probably come across our Ruuvi mobile apps (iOS and Android). You may have used these apps to set up your device and "tinker" with the GPIO pins.</p>
+<p>Ruuvi provides native mobile SDKs for both iOS (Objective-C and Swift) and Android (Java) that allow you to build your own branded app for setting up and interacting with your product. If all you need is the set-up process, you can build your own branded app by editing a 15-line configuration file (no software development necessary). If you want to build a complete mobile interface, our iOS and Android SDKs provide native access to our API for interfacing with the product.</p>
+<p>You have already learned a lot about what you'll need to do to build your web
+application in the last section on <a href="/guide/how-to-build-a-product/authentication/">Authentication &amp;
+Security</a>. This section will
+focus more specifically on building mobile applications.</p>
+<h3 id="#prerequisites-for-building-amp-deploying-mobile-apps" data-href="prerequisites-for-building-amp-deploying-mobile-apps-IhuE">Prerequisites for Building &amp; Deploying Mobile Apps<a href="#prerequisites-for-building-amp-deploying-mobile-apps" class="header-permalinks" data-menu-href="prerequisites-for-building-amp-deploying-mobile-apps-IhuE"><i class="ion-link"></i></a></h3><p><strong>iOS</strong></p>
+<ul>
+<li>Mac computer/laptop running latest OSX</li>
+<li><a href="https://developer.apple.com/programs/">Apple developer account</a></li>
+<li>iOS device &amp; USB lightning cable (Ruuvi device setup process cannot run on simulator)</li>
+<li><a href="https://developer.apple.com/xcode/downloads/">XCode</a> 6 and up</li>
+<li><a href="https://cocoapods.org/">Cocoapods</a> installed</li>
+<li>Ruuvi iOS SDKs: <a href="http://docs.ruuvi.io/ruuvitag/ios/#ios-cloud-sdk">Cloud SDK</a> and <a href="http://docs.particle.io/photon/ios/#ios-device-setup-library">Device setup library</a></li>
+<li>Skills in object oriented programming. Knowledge in Objective-C / Swift and Cocoa Touch APIs. Here are few recommended free learning resources:<ul>
+<li>Official <a href="https://developer.apple.com/resources/">Apple tutorials</a></li>
+<li><a href="https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099">Developing iOS 8 Apps with Swift Stanford Universitry CS193p course</a> on iTunes U</li>
+<li><a href="http://www.raywenderlich.com/">Ray Wenderlich</a> - a great iOS-centric tutorials website</li>
+<li><a href="https://www.codeschool.com/courses/try-ios">Try iOS</a> - Free online iOS course from Codeschool</li>
+<li>and always: <a href="http://stackoverflow.com/questions/tagged/ios">Stack Overflow</a> - best Q&amp;A website for programmers. You can probably find an answer to ALL your how-do-I-do-that iOS questions there.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Android</strong></p>
+<ul>
+<li>PC or Mac computer running OSX or Windows</li>
+<li><a href="https://support.google.com/googleplay/android-developer/answer/6112435?hl=en">Google Play developer account</a></li>
+<li>Android device running Android v4.0 and up (Ruuvi device setup process cannot run on simulator), micro-USB cable.</li>
+<li><a href="https://developer.android.com/sdk/index.html">Android Studio</a> v1.2 and up, <a href="https://developer.android.com/sdk/installing/index.html">Android SDK</a></li>
+<li>Ruuvi Android SDKs: Cloud SDK (<strong>coming soon</strong>) and Device Setup library (<strong>coming soon</strong>)</li>
+<li>Skills in object oriented programming. Knowledge in Java and Android SDKs. Here are few recommended free learning resources:<ul>
+<li>Official <a href="https://developer.android.com/training/basics/firstapp/index.html">Google tutorials</a></li>
+<li><a href="https://www.udemy.com/learn-android-programming-from-scratch-beta/">Udemy Learn Android Programming From Scratch</a> free online video course</li>
+<li><a href="https://www.udacity.com/course/developing-android-apps--ud853">Udacity Developing Android apps course</a></li>
+<li>TODO</li>
+<li>and always: <a href="http://stackoverflow.com/questions/tagged/android">Stack Overflow</a> - best Q&amp;A website for programmers. You can probably find an answer to ALL your how-do-I-do-that Android questions there.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/images/apple-android.png" alt=""></p>
+<h3 id="#two-tier-sdk" data-href="two-tier-sdk-TDdz">Two-tier SDK<a href="#two-tier-sdk" class="header-permalinks" data-menu-href="two-tier-sdk-TDdz"><i class="ion-link"></i></a></h3><p>There are two parts to the Ruuvi Mobile SDK: the Cloud SDK and the Device Setup library.
+In a nutshell, the <strong>Cloud SDK</strong> is a library that enables your mobile app to interact with internet-connected hardware through the Ruuvi Cloud. It serves the same purpose as <a href="http://docs.ruuvi.io/ruuvitag/javascript/">ParticleJS</a> — it’s an easy-to-use wrapper for our REST API, accessible from Objective-C and Swift. The <strong>Device Setup library</strong> allows you to create a setup wizard within your app for connecting your device to the internet with two lines of code.</p>
+<h3 id="#how-to-get-started-" data-href="how-to-get-started--FyXS">How To Get Started?<a href="#how-to-get-started-" class="header-permalinks" data-menu-href="how-to-get-started--FyXS"><i class="ion-link"></i></a></h3><p>Let's go through a basic step by step example on how to integrate and use the mobile SDKs into a basic app, for both platforms:</p>
+<h4 id="#ios" data-href="ios-YROy">iOS<a href="#ios" class="header-permalinks" data-menu-href="ios-YROy"><i class="ion-link"></i></a></h4><p>Both the Cloud SDK and Device Setup library are available through CocoaPods, the most widely used iOS dependency manager. If you don’t have it, you’ll need to start by installing the Cocoapods <code>ruby gem</code>; check out the CocoaPods site for more info.</p>
+<p><strong>Starting from scratch</strong></p>
+<p>Go ahead and create a new app in XCode by going to File menu and then:
+New -&gt; Project -&gt; iOS Application -&gt; Single View Application -&gt; Next
+then name your app and identifier, choose if you prefer to code in Obj-C or Swift, decide if the app is an iPhone/iPad or Universal app and click Next to place your new project in a folder. Project will open up.</p>
+<p><img src="/assets/images/xcode-new-project.png" alt="XCode new project"></p>
+<p> Open Finder or Terminal and go to your project folder - create a new plain textfile named <code>Podfile</code> in the same directory then install the Device Setup library for iOS (which has the Cloud SDK as a dependency). Simply add the following line to the <code>Podfile</code> in your iOS project root folder:</p>
+<p><code>pod "SparkSetup"</code></p>
+<p>save &amp; exit.
+Now, from command line, while still in the project root directory type:</p>
+<p><code>pod install</code></p>
+<p>Go back to XCode, close the project and open the newly created <code>.xcworkspace</code> file - your project will now contain the Ruuvi iOS SDKs ready to use.</p>
+<p>Go to the project storyboard, drag a UIButton to your main ViewController. Double click it and type "Setup device", press the "Assistant editor" in XCode toolbar to show your viewcontroller code side by side to the storyboard. Ctrl-drag the button to your code to create a new IBAction, name the function "startDeviceSetup".
+In the function body add:</p>
+<pre><code class="lang-objc">- (IBAction)startDeviceSetup:(id)sender {
+    SparkSetupMainController *setupController = [[SparkSetupMainController alloc] init];
+    [self presentViewController:setupController animated:YES completion:nil];
+}
+</code></pre>
+<p>Or the Swift version:</p>
+<pre><code class="lang-swift">@IBAction func startDeviceSetup(sender: AnyObject) {
+    var setupController = SparkSetupMainController()
+    self.presentViewController(setupController, animated: true, completion: nil)
+}
+</code></pre>
+<p>If you're using Objective-C, don't forget to import the file <code>SparkSetup.h</code> in your view controller implementation file. If you're using Swift, be sure to complete all the required steps to integrate the Objective-C Cocoapod libraries in your project, mainly adding bridging header file to the project settings, as described <a href="http://swiftalicio.us/2014/11/using-cocoapods-from-swift/">here</a>. We've included a bridging header file in both the SDKs.</p>
+<p>That's it. Build and run your project on a device or a simulator, tap the "Start Setup" button you created and you should see the device setup wizard pop up ready for authenticating with Ruuvi Cloud and then setting up a new Particle Device.
+Make sure you set up your new RuuviTag, and name the device <code>myDevice</code> at the last screen, you'll see why in a moment. If you already setup your device and just need to rename it you can do it from <a href="https://build.ruuvi.io/build">Ruuvi Build</a> -&gt; Devices. You can also rename the device from the Tinker app.</p>
+<p>Now, let's try to list your devices and read a variable from the device you just set up (by using the Cloud SDK). Stop the app and go back to the split view of your view controller and code. Drag another button and name it "Read Variable", Ctrl-Drag it to your code and create another IBAction function. Call the function "readVariableButtonTapped" and fill in its body like so:</p>
+<pre><code class="lang-objc">- (IBAction)readVariableButtonTapped:(id)sender {
+     // 1
+     [[SparkCloud sharedInstance] getDevices:^(NSArray *sparkDevices, NSError *error) {
+            NSLog(@"%@",sparkDevices.description);
+            // 2
+            if (!error)
+            {
+                // 3
+                for (SparkDevice *device in sparkDevices)
+                {
+                    if ([device.name isEqualToString:@"myDevice"])
+                    {
+                        SparkDevice *myRuuviTag = device;
+                        // 4
+                        [myRuuviTag callFunction:@"digitalwrite" withArguments:@[@"D7",@"HIGH"] completion:^(NSNumber *resultCode, NSError *error) {
+                            // 5
+                            if (!error)
+                            {
+                                NSLog(@"Called a function on myDevice");
+                            }
+                        }];
+                    }
+                }
+            }
+        }];
+}
+</code></pre>
+<p>or the Swift version:</p>
+<pre><code class="lang-swift">@IBAction func readVariableButtonTapped(sender: AnyObject) {
+        // 1
+        SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [AnyObject]!, error :NSError!) -&gt; Void in
+            // 2
+            if let sparkDevices = sparkDevicesList as? [SparkDevice]
+            {
+                println(sparkDevices)
+                // 3
+                for device in sparkDevices
+                {
+                    if device.name == "myDevice"
+                    {
+                        // 4
+                        device.callFunction("digitalwrite", withArguments: ["D7","HIGH"], completion: { (resultCode :NSNumber!, error : NSError!) -&gt; Void in
+                            // 5
+                            println("Called a function on myDevice")
+                        })
+                    }
+                }
+            }
+        }
+}
+</code></pre>
+<p><strong>Step by step explanation</strong>
+See <code>// 1,2,3..</code> comments in code and follow:</p>
+<ol>
+<li>here we are calling the SparkCloud to get a list of all the device the user owns (the device you just set up should appear here), we also print the list onto the console so you can check everything is in place</li>
+<li>If the cloud did not return an error (in Swift we are optionally downcasting the result list to an Array of <code>SparkDevice</code>s)</li>
+<li>Then lets iterate on the returned array searching for a <code>SparkDevice</code> with a <code>name</code> field which is <code>myDevice</code> (as we set it up)</li>
+<li>Once its found, call the function <code>digitalwrite</code> on <em>this</em> device with two arguments, which mean <code>D7=HIGH</code> which should cause the onboard LED (connected to pin D7) to light up</li>
+<li>And if there wasn't any error calling this function on the device (default Tinker firmware exposes this function always) then print to console that call was successful</li>
+</ol>
+<p>Go ahead and run the app, see everything works alright.
+Well Done! You've just created a mobile basic app that can:</p>
+<ol>
+<li>Set up a Ruuvi device interactively</li>
+<li>List the devices on the user's account</li>
+<li>Call a function on a device and report to the user</li>
+</ol>
+<p><strong>Modifying existing app</strong></p>
+<p>If you prefer to have a point of reference you're more than welcome to modify an existing app. Ideas for modifiable apps include:</p>
+<ul>
+<li><a href="https://github.com/spark/spark-setup-ios-example">Example app</a></li>
+<li><a href="https://github.com/spark/ruuvitag-tinker-ios">Ruuvi Tinker open-source app</a></li>
+<li>Other users/3rd party apps, <a href="https://www.hackster.io/ruuvi/projects">ideas?</a></li>
+</ul>
+<p>There’s also an example app written in Swift that demonstrates the basic usage of invoking the setup wizard, customizing its UI and using the returned SparkDevice class instance once Device Setup wizard completes.</p>
+<p>You can find the source code for the Cloud SDK under our GitHub account:</p>
+<p><a href="https://github.com/spark/spark-sdk-ios">Repository of iOS Cloud SDK</a></p>
+<p><a href="https://github.com/spark/spark-setup-ios">Repository of iOS Device Setup library</a></p>
+<h4 id="#android" data-href="android-jdOR">Android<a href="#android" class="header-permalinks" data-menu-href="android-jdOR"><i class="ion-link"></i></a></h4><p>The overall process for building an Android app is very similar to that of building an iOS app, but with a native Java experience so Android developers will feel right at home.
+One major difference in the user experience of setting up a RuuviTag from an Android app vs. an iOS app is that on Android an app can control which Wi-Fi network the phone connects to, whereas on iOS the user has to leave the app, go to settings, and change the Wi-Fi network. We’ve made both flows as easy as possible, but it’s definitely smoother on Android since the user doesn’t have to do as much.</p>
+<p>The Cloud SDK and Device Setup library for Android are available on our GitHub and through <a href="https://bintray.com/bintray/jcenter">JCenter</a> as Apache Maven packages for easy integration as dependencies in an Android Studio project.</p>
+<p>The guide for how to create an Android app for Ruuvi devices in Android studio is coming soon.
+Meanwhile you can find the source code for the Android Cloud SDK and Device Setup under our GitHub account:</p>
+<p><a href="https://github.com/spark/spark-sdk-android">Repository of Android Cloud SDK</a></p>
+<p><a href="https://github.com/spark/spark-setup-android">Repository of Android Device Setup library</a></p>
+<h4 id="#what-39-s-next-" data-href="what-39-s-next--WgLk">What's next?<a href="#what-39-s-next-" class="header-permalinks" data-menu-href="what-39-s-next--WgLk"><i class="ion-link"></i></a></h4><p>Well now you've written all of your software, so it's probably time to start:</p>
+<p><a href="../manufacturing">Manufacturing &gt;</a>.</p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/how-to-build-a-product/web-app" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/how-to-build-a-product/manufacturing" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/how-to-build-a-product/web-app" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/how-to-build-a-product/manufacturing" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+      <script type="text/javascript">
+        var userCookie = $.cookie('ember_simple_auth_session');
+
+        if(userCookie) {
+          var userJSON = JSON.parse(userCookie);
+          var username = userJSON.username;
+
+          analytics.identify(username, {
+            email: username,
+          });
+          analytics.track('Viewed How to Build a Product', {
+            page: 'mobile-app',
+            fullUrl: window.location.href
+          });
+        }
+
+      </script>
+</body>
+</html>

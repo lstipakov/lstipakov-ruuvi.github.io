@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Tinker &amp; Mobile App</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+          <div class="dropdown">
+            <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="im-devices-icon"></i>
+                RuuviTracker
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="/guide/getting-started/tinker/ruuvitag/">RuuviTag</a></li>
+              <li><a href="/guide/getting-started/tinker/ruuvitracker/">RuuviTracker</a></li>
+            </ul>
+          </div>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/getting-started/tinker.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level " data-level="1.4">
+                    <a href="/guide/getting-started/modes">Device Modes</a>
+                </li>
+                <li class="top-level active" data-level="1.5">
+                    <span>Tinker & Mobile App</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="step-one-select-your-device-q8OI"><a href="#step-one-select-your-device" data-menu-href="step-one-select-your-device-q8OI">Step One: Select Your Device</a></li>
+                        <li class="middle-level" data-nav="step-two-explore-the-tinker-app-Fj7O"><a href="#step-two-explore-the-tinker-app" data-menu-href="step-two-explore-the-tinker-app-Fj7O">Step Two: Explore the Tinker App</a></li>
+                        <li class="middle-level" data-nav="step-three-digitalwrite-MPkq"><a href="#step-three-digitalwrite" data-menu-href="step-three-digitalwrite-MPkq">Step Three: digitalWrite</a></li>
+                        <li class="middle-level" data-nav="step-four-analogwrite-UYZY"><a href="#step-four-analogwrite" data-menu-href="step-four-analogwrite-UYZY">Step Four: analogWrite</a></li>
+                        <li class="middle-level" data-nav="step-five-digitalread-4SFf"><a href="#step-five-digitalread" data-menu-href="step-five-digitalread-4SFf">Step Five: digitalRead</a></li>
+                        <li class="middle-level" data-nav="step-six-analogread-g0S6"><a href="#step-six-analogread" data-menu-href="step-six-analogread-g0S6">Step Six: analogRead</a></li>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level " data-level="1.9">
+                    <a href="/guide/getting-started/contributing">Open Source</a>
+                </li>
+                <li class="top-level " data-level="1.10">
+                    <a href="/guide/getting-started/hackathon">Hackathon</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="2.2">
+                    <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>
+                </li>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level " data-level="3.6">
+                    <a href="/guide/how-to-build-a-product/mobile-app">Building your own mobile app (iOS and Android)</a>
+                </li>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#tinkering-with-quot-tinker-quot-" data-href="tinkering-with-quot-tinker-quot--weLy">Tinkering with "Tinker"<a href="#tinkering-with-quot-tinker-quot-" class="header-permalinks" data-menu-href="tinkering-with-quot-tinker-quot--weLy"><i class="ion-link"></i></a></h1><p><img src="/assets/images/tinker.png" alt="Tinker selection"></p>
+<p>The Tinker section of the Ruuvi mobile app makes it very easy to start playing with your Particle device without writing any code. It's great for early development, learning, and prototyping. We'll learn to use it in the next few examples.</p>
+<p>To get started, you'll need the following things:</p>
+<h4 id="#materials" data-href="materials-iDi4">Materials<a href="#materials" class="header-permalinks" data-menu-href="materials-iDi4"><i class="ion-link"></i></a></h4><ul>
+<li><strong>Hardware</strong><ul>
+<li>Your Ruuvi device, brand new and out of the box!</li>
+<li>USB to micro USB cable </li>
+<li>Power source for USB cable (such as your computer, USB battery, or power brick)</li>
+<li>Your iPhone or Android smartphone</li>
+<li>(2) Resistors between 220 Ohms and 1000 Ohms </li>
+<li>(1) LED, any color </li>
+<li>(1) Photoresistor or other resistance-based sensor, such as a Thermistor or Force-Sensitive Resistor </li>
+</ul>
+</li>
+<li><strong>Software</strong><ul>
+<li>Ruuvi Mobile App - <a href="https://itunes.apple.com/us/app/ruuvi-build-ruuvitag-electron/id991459054?ls=1&amp;mt=8">iPhone</a> | <a href="https://play.google.com/store/apps/details?id=io.particle.android.app">Android</a> (requires Android 4.0.3 or higher)</li>
+</ul>
+</li>
+<li><strong>Experience</strong><ul>
+<li>Connecting your Device <a href="/guide/getting-started/start">with your smartphone</a> or <a href="/guide/getting-started/connect">over USB</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>NOTE:</strong> You may already have the Spark RuuviTracker App for <a href="https://itunes.apple.com/us/app/spark-ruuvitracker/id760157884">iPhone</a> or <a href="https://play.google.com/store/apps/details?id=io.spark.core.android">Android</a> (requires Android 4.0 or higher). We recommend getting the newer Ruuvi Mobile App anyway, since it's a very nice interface for Tinker that works across all devices. Sadly, the new Particle Mobile App will not connect your Core, though. If you don't feel like having two apps on your phone, the old Spark Core App will still work for these examples. However, the images in this tutorial will be from the newer and fancier Particle App.</p>
+<h2 id="#step-one-select-your-device" data-href="step-one-select-your-device-q8OI">Step One: Select Your Device<a href="#step-one-select-your-device" class="header-permalinks" data-menu-href="step-one-select-your-device-q8OI"><i class="ion-link"></i></a></h2><p>You've already connected your device, either with <a href="/guide/getting-started/start">your smartphone</a> or <a href="/guide/getting-started/connect">over USB</a>. This means that when you open the Ruuvi App, you'll see a screen like this:</p>
+<p><img src="/assets/images/tinker-device-screen.png" alt=""></p>
+<p>This person has a lot of devices, so the list is pretty crowded. As you can see, you can give your devices unique names to help you remember which is which.</p>
+<p>Select the device you would like to Tinker around with by tapping on it.</p>
+<p class="boxedHead">Troubleshooting Note: I have a device online, but it doesn't have Tinker firmware on it.</p>
+<p class="boxed">
+If there is a little yellow circle next to the device you want to use, it is online but does not have Tinker firmware running on it. (You probably replaced it with your user firmware for a different project or example.)
+
+<img src="/assets/images/tinker-device-screen-non-tinker.png" alt="">
+
+When you tap on one of these devices, it will give you the option to reflash the Tinker firmware.
+
+<img src="/assets/images/tinker-device-screen-reflash.png" alt="">
+
+To do the following examples, you'll want to reflash the Tinker firmware. Go ahead and do this.
+</p>
+
+<h2 id="#step-two-explore-the-tinker-app" data-href="step-two-explore-the-tinker-app-Fj7O">Step Two: Explore the Tinker App<a href="#step-two-explore-the-tinker-app" class="header-permalinks" data-menu-href="step-two-explore-the-tinker-app-Fj7O"><i class="ion-link"></i></a></h2><p>The app consists of 16 pins in vertical rows - 8 analog pins on the left, 8 digital pins on the right. These pins represent the 16 GPIO (General Purpose Input and Output) pins on your device.</p>
+<p><img src="/assets/images/tinker.png" alt=""></p>
+<p>To begin, tap any of the pins. A menu will pop up showing the functions that pin has available, tap a function name to select the pin functionality. You can reset the pin function by long-pressing it. Each pin can have up to <span class="footnoteLink">four possible functions<span class="footnote">If you've ever programmed an Arduino microcontroller, you may recognize <code>digitalWrite</code>, <code>analogWrite</code>, <code>digitalRead</code>, <code>analogRead</code>, and their respective use-cases. The Tinker firmware is a pipeline for calling these very familiar Wiring functions from the cloud. More on this <a href="/guide/getting-started/examples">later</a>.</span></span>:</p>
+<ul>
+<li><strong>digitalWrite</strong>: Sets the pin to HIGH or LOW, which either connects it to 3.3V (the maximum voltage of the system) or to GND (ground). Pin D7 is connected to an on-board LED; if you set pin D7 to HIGH, the LED will turn on, and if you set it to LOW, it will turn off.</li>
+<li><strong>analogWrite</strong>: Sets the pin to a value between 0 and 255, where 0 is the same as LOW and 255 is the same as HIGH. This is sort of like sending a voltage between 0 and 3.3V, but since this is a digital system, it uses a mechanism called Pulse Width Modulation, or PWM. You could use <em>analogWrite</em> to dim an LED, as an example. </li>
+<li><strong>digitalRead</strong>: This will read the digital value of a pin, which can be read as either HIGH or LOW. If you were to connect the pin to 3.3V, it would read HIGH; if you connect it to GND, it would read LOW. Anywhere in between, it'll probably read whichever one it's closer to, but it gets dicey in the middle.</li>
+<li><strong>analogRead</strong>: This will read the analog value of a pin, which is a value from 0 to 4095, where 0 is LOW (GND) and 4095 is HIGH (3.3V). All of the analog pins (A0 to A7) can handle this. <em>analogRead</em> is great for reading data from sensors.</li>
+</ul>
+<p>In other words, Tinker lets you control and read the voltage of the pins on your device. You can choose to send a lot of voltage to an LED to light it up, or read the voltage at a sensor.</p>
+<p>Now for some examples!</p>
+<h2 id="#step-three-digitalwrite" data-href="step-three-digitalwrite-MPkq">Step Three: digitalWrite<a href="#step-three-digitalwrite" class="header-permalinks" data-menu-href="step-three-digitalwrite-MPkq"><i class="ion-link"></i></a></h2><p>The simplest thing we can do with Tinker is to turn the D7 LED on and off.</p>
+<p>To turn on the LED, tap the D7 pin on the mobile app.</p>
+<p><img src="/assets/images/tinker-d7.png" alt=""></p>
+<p>Then tap <code>digitalWrite</code> to let it know that you want to send high or low voltage to that pin.</p>
+<p><img src="/assets/images/tinker-d7-low.png" alt=""></p>
+<p>You'll see a screen like the one above. Try tapping the D7 pin on the screen again.</p>
+<p><img src="/assets/images/tinker-d7-high.png" alt=""></p>
+<p>It will change its status to <code>HIGH</code> and your device's D7 LED will turn on. Tapping it again will change the status to <code>LOW</code> and the LED will turn off.</p>
+<p><code>digitalWrite</code> only has two options: <code>HIGH</code> and <code>LOW</code>. When we speak to our pins digitally, we can only send the maximum voltage or no voltage. That's great for when you only need two settings-- like if you had a light switch that could only go on and off, or locks that could only be open or closed. For everything in between, we use <code>analogWrite</code>.</p>
+<h2 id="#step-four-analogwrite" data-href="step-four-analogwrite-UYZY">Step Four: analogWrite<a href="#step-four-analogwrite" class="header-permalinks" data-menu-href="step-four-analogwrite-UYZY"><i class="ion-link"></i></a></h2><p>In this example, we'll plug an LED into D0 and change its brightness with analogWrite. (D0 is a <span class="footnoteLink">PWM pin.<span class="footnote">A <a href="https://en.wikipedia.org/wiki/Pulse-width_modulation">Pulse Width Modulation (PWM)</a> output is a digital output that can be filtered through various means to create a pseudo analog output. It is possible to analogWrite to <code>D0</code> through its PWM functionality.</span></span></p>
+<p>Wire up your LED with one of your resistors as follows:</p>
+<p><img src="/assets/images/ruuvitag-led-fritzing.png" alt="LED fritzing"></p>
+<p>Then, pull up your mobile app and select D0 this time. Instead of <code>digitalWrite</code>, select <code>analogWrite</code>.</p>
+<p><img src="/assets/images/tinker-d0.png" alt=""></p>
+<p>You should now be able to set the D0 pin to any number between 0 and 255.</p>
+<p><img src="/assets/images/tinker-d0-slider.png" alt=""></p>
+<p>It basically divides the maximum voltage by 255 and allows us to set the slider to any fraction of the voltage between minimum and maximum. Pretty cool, right?</p>
+<p>By sliding and releasing the slider, you should be able to see the LED dim and glow at different levels.</p>
+<p><img src="/assets/images/tinker-d0-slider-med.png" alt=""></p>
+<p>If we wanted to, we could also switch modes and <code>digitalWrite</code> this LED to turn it on or off. To change the function of the pin, simply tap and hold on the pin, and the function select menu will come back up.</p>
+<h2 id="#step-five-digitalread" data-href="step-five-digitalread-4SFf">Step Five: digitalRead<a href="#step-five-digitalread" class="header-permalinks" data-menu-href="step-five-digitalread-4SFf"><i class="ion-link"></i></a></h2><p>We can also use Tinker to check to see if a pin is on or off. <code>digitalRead</code> is great for checking things that only have two states-- switches and buttons for example.</p>
+<p>In this case, we're going to do the simplest thing possible and simply use one wire to change the voltage of the D0 pin. Plug a wire or resistor to connect <code>D0</code> and <code>3V3</code>, as shown below.</p>
+<p><img src="/assets/images/ruuvitag-onewire-fritzing.png" alt="One Wire Fritzing"></p>
+<p>As you can see, one side of the wire is plugged into <code>3V3</code> and the other is plugged into <code>D0</code>. <code>3V3</code> sends the maximum voltage out. We've plugged it into <code>D0</code>, so <code>D0</code> is receiving the maximum voltage.</p>
+<p>Let's read that. Go into your mobile app. Press and hold <code>D0</code> to reset it. After it goes blank, tap it again and select <code>digitalRead</code>.</p>
+<p><img src="/assets/images/tinker-d0.png" alt=""></p>
+<p>If your wire is plugged in, you'll see the word <code>HIGH</code> next to the <code>D0</code> pin. Now unplug the wire and tap the <code>D0</code> pin on the mobile app once more. <span class="footnoteLink">Now the pin will say <code>LOW</code>.<span class="footnote">If you don't get <code>LOW</code> right away, give it a moment. There is still some residual voltage hanging out in the pin, but in a second that will disperse and it should read as <code>LOW</code>.</span></span></p>
+<p><img src="/assets/images/tinker-d0-high.png" alt="">
+<img src="/assets/images/tinker-d0-low.png" alt=""></p>
+<h2 id="#step-six-analogread" data-href="step-six-analogread-g0S6">Step Six: analogRead<a href="#step-six-analogread" class="header-permalinks" data-menu-href="step-six-analogread-g0S6"><i class="ion-link"></i></a></h2><p>If we want to read a sensor, like a temperature or light sensor, we will need our device to give us more details than than just "It's on!" or "It's off!" When you want to read a value between <code>LOW</code> and <code>HIGH</code>, use <code>analogRead</code>.</p>
+<p>Plug in a sensor. In this example, we'll use a photoresistor.</p>
+<p>Wire it up as pictured below. You can use any resistor for this; a larger resistor (like 10K Ohms) will give you a wider range of values whereas a smaller resistor (like 330 Ohms) will give you lower range of values.</p>
+<p><img src="/assets/images/ruuvitag-photores-only-fritzing.png" alt="Photoresistor Only Fritzing"></p>
+<p>Tap the A5 pin and set it to <code>digitalWrite</code> and <code>HIGH</code>.</p>
+<p><img src="/assets/images/tinker-a5.png" alt="">
+<img src="/assets/images/tinker-a5-high.png" alt=""></p>
+<p>This essentially gives us a consistent power source from A5 that will go to our photoresistor. (We are doing this because sometimes an on-board power source like 3V3 has small fluctuations in power that could affect our photoresistor readings.)</p>
+<p>Now tap A0 and set it to <code>analogRead</code>.</p>
+<p><img src="/assets/images/tinker-a0.png" alt=""></p>
+<p>Hold your breadboard with the photoresistor on it up to a light source and tap A0 again to get the reading of the photoresistor. Now cover the photoresistor and tap A0 again. See the difference?</p>
+<p><img src="/assets/images/tinker-a0-photo-read-low.png" alt="">
+<img src="/assets/images/tinker-a0-photo-read-high.png" alt=""></p>
+<p>You can try testing different kinds of light, or you can even swap out your photoresistor for another kind of fluctuating resistor like a thermistor or a force sensitive resistor.</p>
+<p>When you're ready, let's move on to <a href="/guide/getting-started/build">putting your own firmware on your Ruuvi device using the web IDE.</a></p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/getting-started/modes" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/getting-started/build" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/getting-started/modes" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/getting-started/build" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+</body>
+</html>

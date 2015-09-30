@@ -1,0 +1,279 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Open Source</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+          <div class="dropdown">
+            <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="im-devices-icon"></i>
+                RuuviTracker
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="/guide/getting-started/contributing/ruuvitag/">RuuviTag</a></li>
+              <li><a href="/guide/getting-started/contributing/ruuvitracker/">RuuviTracker</a></li>
+            </ul>
+          </div>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/getting-started/contributing.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level " data-level="1.4">
+                    <a href="/guide/getting-started/modes">Device Modes</a>
+                </li>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/tinker">Tinker &amp; Mobile App</a>
+                </li>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level active" data-level="1.9">
+                    <span>Open Source</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="open-source-repos-29U7"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#open-source-repos" data-menu-href="open-source-repos-29U7">Open-Source Repos</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="style-guides-IxvR"><a href="#style-guides" data-menu-href="style-guides-IxvR">Style guides</a></li>
+                                <li data-secondary-nav="firmware-6jbT"><a href="#firmware" data-menu-href="firmware-6jbT">Firmware</a></li>
+                                <li data-secondary-nav="cli-guIr"><a href="#cli" data-menu-href="cli-guIr">CLI</a></li>
+                                <li data-secondary-nav="ruuvijs-k6WB"><a href="#ruuvijs" data-menu-href="ruuvijs-k6WB">RuuviJS</a></li>
+                                <li data-secondary-nav="mobile-I7l3"><a href="#mobile" data-menu-href="mobile-I7l3">Mobile</a></li>
+                                <li data-secondary-nav="ruuvi-dev-Vstk"><a href="#ruuvi-dev" data-menu-href="ruuvi-dev-Vstk">Ruuvi Dev</a></li>
+                                <li data-secondary-nav="documentation-Qbt6"><a href="#documentation" data-menu-href="documentation-Qbt6">Documentation</a></li>
+                                <li data-secondary-nav="official-libraries-xPoE"><a href="#official-libraries" data-menu-href="official-libraries-xPoE">Official Libraries</a></li>
+                                <li data-secondary-nav="local-cloud-Jjqi"><a href="#local-cloud" data-menu-href="local-cloud-Jjqi">Local Cloud</a></li>
+                                <li data-secondary-nav="hardware-design-7G1U"><a href="#hardware-design" data-menu-href="hardware-design-7G1U">Hardware Design</a></li>
+                            </ul>
+                        <li class="middle-level" data-nav="using-github-6DGE"><a href="#using-github" data-menu-href="using-github-6DGE">Using Github</a></li>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="1.10">
+                    <a href="/guide/getting-started/hackathon">Hackathon</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="2.2">
+                    <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>
+                </li>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level " data-level="3.6">
+                    <a href="/guide/how-to-build-a-product/mobile-app">Building your own mobile app (iOS and Android)</a>
+                </li>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#how-to-contribute-to-ruuvi-39-s-open-source-repositories" data-href="how-to-contribute-to-ruuvi-39-s-open-source-repositories-7usJ">How to Contribute to Ruuvi's Open Source Repositories<a href="#how-to-contribute-to-ruuvi-39-s-open-source-repositories" class="header-permalinks" data-menu-href="how-to-contribute-to-ruuvi-39-s-open-source-repositories-7usJ"><i class="ion-link"></i></a></h1><p>Ruuvi is an open-source platform. You might find something you'd like changed, a feature you'd like implemented, or a bug you see a fix for. If so, you can create a pull request or an issue on one of our open-source Github repos. Here's a quick run-down of some repos you might want to know about, as well as some information on how to contribute.</p>
+<h2 id="#open-source-repos" data-href="open-source-repos-29U7">Open-Source Repos<a href="#open-source-repos" class="header-permalinks" data-menu-href="open-source-repos-29U7"><i class="ion-link"></i></a></h2><p>Go to http://github.com/spark to see all the available repositories. There are quite a few! Here's a guide to the most popular repos.</p>
+<h3 id="#style-guides" data-href="style-guides-IxvR">Style guides<a href="#style-guides" class="header-permalinks" data-menu-href="style-guides-IxvR"><i class="ion-link"></i></a></h3><p>Before you contribute to the code base, check out the <a href="https://github.com/spark/style-guides"><code>style-guides</code></a> repo. This will give you an idea of how we format our code. If you have additional suggestions on good code practices, please make a pull request.</p>
+<h3 id="#firmware" data-href="firmware-6jbT">Firmware<a href="#firmware" class="header-permalinks" data-menu-href="firmware-6jbT"><i class="ion-link"></i></a></h3><p>The <a href="https://github.com/spark/firmware"><code>firmware</code></a> repo contains the <a href="/reference/firmware">system firmware</a> that runs on the RuuviTracker and RuuviTag.</p>
+<h3 id="#cli" data-href="cli-guIr">CLI<a href="#cli" class="header-permalinks" data-menu-href="cli-guIr"><i class="ion-link"></i></a></h3><p>The <a href="https://github.com/spark/particle-cli"><code>ruuvi-cli</code></a> repo contains the code used to run the <a href="/guide/tools-and-features/cli">Command Line Interface</a>.</p>
+<h3 id="#ruuvijs" data-href="ruuvijs-k6WB">RuuviJS<a href="#ruuvijs" class="header-permalinks" data-menu-href="ruuvijs-k6WB"><i class="ion-link"></i></a></h3><p>The <a href="https://github.com/spark/sparkjs"><code>sparkjs</code></a> repo contains the code used to run <a href="/reference/javascript">RuuviJS</a>, the official Particle javascript wrapper.</p>
+<h3 id="#mobile" data-href="mobile-I7l3">Mobile<a href="#mobile" class="header-permalinks" data-menu-href="mobile-I7l3"><i class="ion-link"></i></a></h3><p>There are several mobile repos, for both iOS and Android.</p>
+<ul>
+<li><p>iOS Repos</p>
+<ul>
+<li><a href="https://github.com/spark/spark-setup-ios"><code>spark-setup-ios</code></a>: the Ruuvi Device Setup library</li>
+<li><a href="https://github.com/spark/spark-sdk-ios"><code>spark-sdk-ios</code></a>: the Ruuvi iOS Cloud SDK</li>
+<li><a href="https://github.com/spark/photon-tinker-ios"><code>ruuvitag-tinker-ios</code></a>: the official Ruuvi App</li>
+</ul>
+</li>
+<li><p>Android Repos</p>
+<ul>
+<li><a href="https://github.com/spark/spark-setup-android"><code>spark-setup-android</code></a>: the Ruuvi Device Setup library</li>
+<li><a href="https://github.com/spark/spark-sdk-android"><code>spark-sdk-android</code></a>: the Ruuvi Android Cloud SDK</li>
+<li><a href="https://github.com/spark/photon-tinker-android"><code>ruuvitag-tinker-android</code></a>: the official Ruuvi App</li>
+</ul>
+</li>
+</ul>
+<h3 id="#ruuvi-dev" data-href="ruuvi-dev-Vstk">Ruuvi Dev<a href="#ruuvi-dev" class="header-permalinks" data-menu-href="ruuvi-dev-Vstk"><i class="ion-link"></i></a></h3><p>The <a href="https://github.com/spark/spark-dev"><code>spark-dev</code></a> repo contains the code used to run <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>, our professional, open source, hackable IDE, designed for use with Particle devices.</p>
+<h3 id="#documentation" data-href="documentation-Qbt6">Documentation<a href="#documentation" class="header-permalinks" data-menu-href="documentation-Qbt6"><i class="ion-link"></i></a></h3><p>The <a href="https://github.com/spark/docs"><code>docs</code></a> repo contains Ruuvi's open source <a href="/guide/getting-started/intro">documentation</a>. If you want something to be added or changed, just make a pull request.</p>
+<h3 id="#official-libraries" data-href="official-libraries-xPoE">Official Libraries<a href="#official-libraries" class="header-permalinks" data-menu-href="official-libraries-xPoE"><i class="ion-link"></i></a></h3><p>Ruuvi maintains several open source libraries to be used with official Particle shields. They include:</p>
+<ul>
+<li><a href="https://github.com/spark/InternetButton"><code>InternetButton</code></a>: the library intended for use with the <a href="/datasheets/ruuvitag-shields/#internet-button">Internet Button</a>.</li>
+<li><a href="https://github.com/spark/RelayShield"><code>RelayShield</code></a>: the library intended for use with the <a href="/datasheets/ruuvitag-shields/#relay-shield">RuuviTag Relay Shield</a></li>
+<li><a href="https://github.com/spark/PowerShield"><code>PowerShield</code></a>: the library intended for use with the <a href="/datasheets/ruuvitag-shields/#power-shield">RuuviTag Power Shield</a></li>
+</ul>
+<h3 id="#local-cloud" data-href="local-cloud-Jjqi">Local Cloud<a href="#local-cloud" class="header-permalinks" data-menu-href="local-cloud-Jjqi"><i class="ion-link"></i></a></h3><p>The <a href="https://github.com/spark/spark-server"><code>spark-server</code></a> repo is an API compatible open source server for interacting with devices speaking the <a href="https://github.com/spark/spark-protocol"><code>spark-protocol</code></a>. If you are interested in the local cloud, this repo is for you.</p>
+<h3 id="#hardware-design" data-href="hardware-design-7G1U">Hardware Design<a href="#hardware-design" class="header-permalinks" data-menu-href="hardware-design-7G1U"><i class="ion-link"></i></a></h3><p>We share some hardware design files for each of our dev boards. These open source repos are designed mostly to give you a sense of what we are working on, but you are welcome to make contributions here as well if you have interest and expertise.</p>
+<p>Current hardware design repos include:</p>
+<ul>
+<li><a href="https://github.com/spark/electron"><code>electron</code></a> </li>
+<li><a href="https://github.com/spark/photon"><code>ruuvitag</code></a> </li>
+<li><a href="https://github.com/spark/ruuvitracker"><code>ruuvitracker</code></a> </li>
+<li><a href="/guide/getting-started/contributing/ruuvitag/#official-libraries">Official Libraries</a> such as the <a href="https://github.com/spark/InternetButton"><code>InternetButton</code></a>, <a href="https://github.com/spark/RelayShield"><code>RelayShield</code></a>, and <a href="https://github.com/spark/PowerShield"><code>PowerShield</code></a></li>
+<li><a href="https://github.com/spark/eagle-libraries"><code>eagle-libraries</code></a></li>
+</ul>
+<h2 id="#using-github" data-href="using-github-6DGE">Using Github<a href="#using-github" class="header-permalinks" data-menu-href="using-github-6DGE"><i class="ion-link"></i></a></h2><p>During an episode of Ruuvi Interactions, Christine and Will went over how to contribute to the repos. This video is below.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JnI2VjXEAiU?t=17m11s" frameborder="0" allowfullscreen=""></iframe>
+
+<p>If you're already a Github expert, no need to watch. Otherwise, go <a href="https://guides.github.com/introduction/flow/index.html">here</a> to get a sense of Github flow. We also suggest the <a href="https://desktop.github.com/">Github for Desktop</a> application, which has a great built-in tutorial on forking, editing, merging, and creating a pull request.</p>
+<p>If you prefer the command line, here's an <a href="http://rogerdudler.github.io/git-guide/">extra fast tutorial</a> on how to get started. Just make sure you <a href="https://help.github.com/articles/fork-a-repo/">fork a repo to your Github account</a> before cloning your fork to edit on your local machine.</p>
+<p>If you have your own favorite tutorials on how to <code>git</code>, make a pull request on this documentation to add them!</p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/getting-started/button" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/getting-started/hackathon" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/getting-started/button" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/getting-started/hackathon" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Getting started</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+          <div class="dropdown">
+            <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="im-devices-icon"></i>
+                RuuviTracker
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li><a href="/guide/getting-started/start/ruuvitag/">RuuviTag</a></li>
+              <li><a href="/guide/getting-started/start/ruuvitracker/">RuuviTracker</a></li>
+            </ul>
+          </div>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/getting-started/start.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level active" data-level="1.2">
+                    <span>Getting started</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="getting-to-know-you-iEHL"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#getting-to-know-you" data-menu-href="getting-to-know-you-iEHL">Getting to Know You</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="what-39-s-on-it--v9Wc"><a href="#what-39-s-on-it-" data-menu-href="what-39-s-on-it--v9Wc">What's on it?</a></li>
+                            </ul>
+                        <li class="middle-level" data-nav="prerequisites-for-setup-fx0P"><a href="#prerequisites-for-setup" data-menu-href="prerequisites-for-setup-fx0P">Prerequisites for Setup</a></li>
+                        <li class="middle-level" data-nav="connect-your-ruuvitracker-PNw9"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#connect-your-ruuvitracker" data-menu-href="connect-your-ruuvitracker-PNw9">Connect Your RuuviTracker</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="step-1-power-on-your-device-XecI"><a href="#step-1-power-on-your-device" data-menu-href="step-1-power-on-your-device-XecI">Step 1: Power On Your Device</a></li>
+                                <li data-secondary-nav="step-2-connect-with-your-smartphone-zUEh"><a href="#step-2-connect-with-your-smartphone" data-menu-href="step-2-connect-with-your-smartphone-zUEh">Step 2: Connect With Your Smartphone</a></li>
+                                <li data-secondary-nav="step-3-blink-an-led--Y7oy"><a href="#step-3-blink-an-led-" data-menu-href="step-3-blink-an-led--Y7oy">Step 3: Blink an LED!</a></li>
+                            </ul>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level " data-level="1.4">
+                    <a href="/guide/getting-started/modes">Device Modes</a>
+                </li>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/tinker">Tinker &amp; Mobile App</a>
+                </li>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level " data-level="1.9">
+                    <a href="/guide/getting-started/contributing">Open Source</a>
+                </li>
+                <li class="top-level " data-level="1.10">
+                    <a href="/guide/getting-started/hackathon">Hackathon</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="2.2">
+                    <a href="/guide/tools-and-features/dev">Ruuvi Dev</a>
+                </li>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level " data-level="3.6">
+                    <a href="/guide/how-to-build-a-product/mobile-app">Building your own mobile app (iOS and Android)</a>
+                </li>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#getting-started" data-href="getting-started-VWrd">Getting Started<a href="#getting-started" class="header-permalinks" data-menu-href="getting-started-VWrd"><i class="ion-link"></i></a></h1><h2 id="#getting-to-know-you" data-href="getting-to-know-you-iEHL">Getting to Know You<a href="#getting-to-know-you" class="header-permalinks" data-menu-href="getting-to-know-you-iEHL"><i class="ion-link"></i></a></h2><p><img src="/assets/images/ruuvitracker-box.jpg" alt=""></p>
+<p>Congratulations on being the owner of a brand new Ruuvi Device! Go ahead and open the box. You can see the different <a href="/datasheets/kits">contents</a> and check out their <a href="/datasheets">hardware datasheets</a> if you like! If you have an Internet Button, read through this section to get started and connect your device, then hop over to the <a href="/guide/getting-started/button">Internet Button Guide</a> for more detailed info.</p>
+<p>Let's quickly go over what you see.</p>
+<h3 id="#what-39-s-on-it-" data-href="what-39-s-on-it--v9Wc">What's on it?<a href="#what-39-s-on-it-" class="header-permalinks" data-menu-href="what-39-s-on-it--v9Wc"><i class="ion-link"></i></a></h3><p><span class="popupLink"><strong>The Wi-Fi Module.</strong><span class="popup"><img src="/assets/images/ruuvitracker-cc3000.jpg" style="margin:auto; max-width:100%"></span></span> This is probably why you bought your device-- the Wi-Fi module allows your RuuviTracker or RuuviTag to communicate with the internet. It connects your device to the internet in the same way that your smartphone might connect to a wifi network.</p>
+<p><span class="popupLink"><strong>The Microcontroller.</strong><span class="popup"><img src="/assets/images/ruuvitracker-stm32.jpg" style="margin:auto; max-width:100%"></span></span> The microcontroller is the brain of your device. It runs your software and tells your prototype what to do. Unlike your computer, it can only run one application (often called <em>firmware</em> or an <em>embedded application</em>). This application can be simple (just a few lines of code), or very complex, depending on what you want to do. The microcontroller interacts with the outside world using pins.</p>
+<p>  <span class="popupLink"><strong>The Pins.</strong><span class="popup"><img src="/assets/images/ruuvitracker-pinout.png" style="margin:auto; max-width:100%"></span></span>  Pins are the input and output parts of the microcontroller that are exposed on the sides of your device. GPIO pins can be hooked to sensors or buttons to listen to the world, or they can be hooked to lights and buzzers to act upon the world. There are also pins to allow you to power your device, or power motors and outputs outside of your device. There are pins for Serial/UART communication, and a pin for resetting your device.</p>
+<p><span class="popupLink"><strong>Buttons</strong><span class="popup"><img src="/assets/images/ruuvitracker-buttons.jpg" style="margin:auto; max-width:100%"></span></span> <strong>and</strong> <span class="popupLink"><strong>LEDs.</strong><span class="popup"><img src="/assets/images/ruuvitracker-leds.jpg" style="margin:auto; max-width:100%"></span></span> There are several awesome buttons and LEDs on your RuuviTracker to make it easier to use.</p>
+<ul>
+<li>The <code>MODE</code> button is on the left and the <code>RESET</code> button is on the right. You can use these buttons to help you set your device's <a href="/guide/getting-started/modes">mode</a>.</li>
+<li>The <strong>RGB LED</strong> is in the center of your RuuviTracker, above the module. The color of the RGB LED tells you what <a href="/guide/getting-started/modes">mode</a> your Core is currently in.</li>
+<li>The <strong>D7 LED</strong> in the upper right side of your device. This LED will turn on when the D7 pin is set to <code>HIGH</code>.</li>
+</ul>
+<p>For more technical details on what comes on your device, go <a href="/datasheets">here</a>.</p>
+<h2 id="#prerequisites-for-setup" data-href="prerequisites-for-setup-fx0P">Prerequisites for Setup<a href="#prerequisites-for-setup" class="header-permalinks" data-menu-href="prerequisites-for-setup-fx0P"><i class="ion-link"></i></a></h2><ul>
+<li><strong>Software</strong><ul>
+<li>Spark RuuviTracker Mobile App - <a href="https://itunes.apple.com/us/app/spark-ruuvitracker/id760157884">iPhone</a> | <a href="https://play.google.com/store/apps/details?id=io.spark.ruuvitracker.android">Android</a></li>
+<li><em>Note: We highly recommend using the mobile app for first time setup.</em></li>
+</ul>
+</li>
+<li><strong>Hardware</strong><ul>
+<li>Your Ruuvi device, brand new and out of the box!</li>
+<li>USB to micro USB cable </li>
+<li>Power source for USB cable (such as your computer, USB battery, or power brick)</li>
+<li>Your iPhone or Android smartphone</li>
+</ul>
+</li>
+<li><strong>Wifi Settings</strong><ul>
+<li>2.4GHz capable router</li>
+<li>Channels 1-11</li>
+<li>WPA/WPA2 encryption</li>
+<li>On a broadcasted SSID network</li>
+<li>Not behind a hard firewall or Enterprise network</li>
+<li><em>Note: We do not recommend using WEP wifi settings, for security reasons.</em></li>
+</ul>
+</li>
+<li><strong>Experience</strong><ul>
+<li>None! This is your first project.</li>
+</ul>
+</li>
+</ul>
+<h2 id="#connect-your-ruuvitracker" data-href="connect-your-ruuvitracker-PNw9">Connect Your RuuviTracker<a href="#connect-your-ruuvitracker" class="header-permalinks" data-menu-href="connect-your-ruuvitracker-PNw9"><i class="ion-link"></i></a></h2><p>In this example, we will connect your device to the internet for the very first time. Then, we will blink the D7 LED on your device by using your smartphone.</p>
+<h3 id="#step-1-power-on-your-device" data-href="step-1-power-on-your-device-XecI">Step 1: Power On Your Device<a href="#step-1-power-on-your-device" class="header-permalinks" data-menu-href="step-1-power-on-your-device-XecI"><i class="ion-link"></i></a></h3><p><img src="/assets/images/ruuvitracker-front.jpg" alt="plug in your device!"></p>
+<p>Plug the USB cable into your power source. <span class="footnoteLink">(Your computer works perfectly for this purpose.)<span class="footnote">Your Ruuvi device does not need your computer to connect to wifi. You could just as easily power your device with a power brick, a battery shield, or another power source wired to the VIN pin.</span></span></p>
+<p>As soon as it is plugged in, the RGB LED on your device should begin <span class="popupLink">blinking blue.<span class="popup"><iframe src="https://vine.co/v/eZU6YiK20Hl/embed/simple" width="320" height="320" frameborder="0"></iframe></span></span></p>
+<p>If your device is not blinking blue, <span class="popupLink">hold down the MODE button.<span class="popup"><iframe src="https://vine.co/v/eZUgHYYrYgl/embed/simple" width="320" height="320" frameborder="0"></iframe></span></span></p>
+<p>If your device is not blinking at all, or if the LED is burning a dull orange color, it may not be getting enough power. Try changing your power source or USB cable.</p>
+<h3 id="#step-2-connect-with-your-smartphone" data-href="step-2-connect-with-your-smartphone-zUEh">Step 2: Connect With Your Smartphone<a href="#step-2-connect-with-your-smartphone" class="header-permalinks" data-menu-href="step-2-connect-with-your-smartphone-zUEh"><i class="ion-link"></i></a></h3><p>Open the app on your phone. Log in or sign up for an account with Ruuvi if you don't have one.</p>
+<p>Follow the instructions on the screen to  <span class="footnoteLink">connect your device to Wi-Fi.<span class="footnote">Your device remembers up to 7 wifi networks, and it will connect to these automatically if it can find them.</span></span> Remember that to connect the RuuviTracker, you need the older Spark Core app and to connect the RuuviTag you need the new Ruuvi App.</p>
+<p>This may take a little while - but don't worry.</p>
+<p>While you're waiting, your RuuviTracker will go through the following colors:</p>
+<ul>
+<li><em>Blinking blue:</em> Listening for Wi-Fi credentials</li>
+<li><em>Solid blue:</em> Getting Wi-Fi info from app</li>
+<li><em>Blinking green:</em> Connecting to the Wi-Fi network</li>
+<li><em>Blinking cyan:</em> Connecting to the Spark Cloud</li>
+<li><em>Blinking magenta:</em> Updating to the newest firmware</li>
+<li><em>Breathing cyan:</em> Connected!</li>
+</ul>
+<p>If you can't seem to get the Mobile App to connect your device, that's okay! Read over this example quickly, and then check out the <a href="/guide/getting-started/connect">next lesson</a> to connect your device using the USB cable.</p>
+<p>Once you have connected your device, it has learned that network. Your device can store up to seven  networks. If you feel like your device has too many networks on it, you can wipe your device's memory of any wifi networks it has learned. You can do so by continuing to hold the MODE button for 10 seconds until the RGB LED flashes blue quickly, signaling that all profiles have been deleted.</p>
+<h3 id="#step-3-blink-an-led-" data-href="step-3-blink-an-led--Y7oy">Step 3: Blink an LED!<a href="#step-3-blink-an-led-" class="header-permalinks" data-menu-href="step-3-blink-an-led--Y7oy"><i class="ion-link"></i></a></h3><p>The Spark RuuviTracker App should now be on the <span class="footnoteLink">Tinker<span class="footnote">We have taken the liberty of loading some firmware onto your device for you. It is called Tinker, and it helps you talk to your device by sending power to the pins and reading power levels from the pins. More info about Tinker is available <a href="/guide/getting-started/tinker/ruuvitracker">here</a>.</span></span> screen, as shown below.</p>
+<p><img src="/assets/images/tinker-ruuvitracker.png" alt="Tinker on your Phone!"></p>
+<p>As you can see on your smartphone, the circles represent different pins on your device. If you tap on these circles, you can see the Tinker functions available for the associated pins.</p>
+<p>We could use Tinker and the smartphone app to talk to any pin on your device. If you had a buzzer, an LED, a sensor, etc., you could interact with it using Tinker on your phone. But since I know you're very eager to get started, let's use an LED already provided on your device.</p>
+<p>The D7 pin comes already wired to a small blue LED on the face of your device. When you set the power of the D7 pin to high, this LED turns on. Let's do that now.</p>
+<p>Tap <code>D7</code> then <code>digitalWrite</code> in the popup. Now when you tap the D7 circle the tiny blue LED should turn off or on!</p>
+<p><strong>Congratulations, you just blinked an LED over the internet, using your Ruuvi device!</strong></p>
+<p>Keep in mind that with Tinker, you can communicate with any of the pins, not just with the D7 LED. You can wire things to the pins to run motors, read sensors, and much more. The real fun part comes when you write your own firmware, of course. We'll go over that in later sections.</p>
+<p>If you don't have your smartphone with you, go ahead and move to the next lesson on <a href="/guide/getting-started/connect">connecting over USB.</a>. If you've successfully connected with your smartphone and you'd like to keep playing around with Tinker, skip ahead to learn <a href="/guide/getting-started/modes">device modes</a> and then do some <a href="/guide/getting-started/tinker">Tinker examples</a>.</p>
+<p>Otherwise, go to the next section to learn to connect over USB.</p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/getting-started/intro" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/getting-started/connect" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/getting-started/intro" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/getting-started/connect" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+</body>
+</html>

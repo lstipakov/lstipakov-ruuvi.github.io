@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Ruuvi Dev</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi" property="og:title">
+  <meta content="Documentation for Ruuvi, a platform for connected devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://www.ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/datasheets">Datasheets</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/datasheets">Datasheets</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/tools-and-features/dev.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section ">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/connect">Connecting Your Device</a>
+                </li>
+                <li class="top-level " data-level="1.4">
+                    <a href="/guide/getting-started/modes">Device Modes</a>
+                </li>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/tinker">Tinker &amp; Mobile App</a>
+                </li>
+                <li class="top-level " data-level="1.6">
+                    <a href="/guide/getting-started/build">Web IDE (Build)</a>
+                </li>
+                <li class="top-level " data-level="1.7">
+                    <a href="/guide/getting-started/examples">Code Examples</a>
+                </li>
+                <li class="top-level " data-level="1.8">
+                    <a href="/guide/getting-started/button">Internet Button</a>
+                </li>
+                <li class="top-level " data-level="1.9">
+                    <a href="/guide/getting-started/contributing">Open Source</a>
+                </li>
+                <li class="top-level " data-level="1.10">
+                    <a href="/guide/getting-started/hackathon">Hackathon</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Tools And Features</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/tools-and-features/intro">Introduction</a>
+                </li>
+                <li class="top-level active" data-level="2.2">
+                    <span>Ruuvi Dev</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="getting-started-udoo"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#getting-started" data-menu-href="getting-started-udoo">Getting Started</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="logging-in-8BUR"><a href="#logging-in" data-menu-href="logging-in-8BUR">Logging In</a></li>
+                                <li data-secondary-nav="selecting-device-w65h"><a href="#selecting-device" data-menu-href="selecting-device-w65h">Selecting Device</a></li>
+                                <li data-secondary-nav="compiling-code-0Rvo"><a href="#compiling-code" data-menu-href="compiling-code-0Rvo">Compiling Code</a></li>
+                                <li data-secondary-nav="flashing-device-3gEl"><a href="#flashing-device" data-menu-href="flashing-device-3gEl">Flashing device</a></li>
+                            </ul>
+                        <li class="middle-level" data-nav="cloud-variables-amp-functions-NzOJ"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#cloud-variables-amp-functions" data-menu-href="cloud-variables-amp-functions-NzOJ">Cloud variables &amp; functions</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="variables-XsEX"><a href="#variables" data-menu-href="variables-XsEX">Variables</a></li>
+                                <li data-secondary-nav="functions-qMdU"><a href="#functions" data-menu-href="functions-qMdU">Functions</a></li>
+                            </ul>
+                        <li class="middle-level" data-nav="managing-your-device-rcSL"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#managing-your-device" data-menu-href="managing-your-device-rcSL">Managing Your Device</a></li>
+                            <ul class="nav secondary-in-page-toc">
+                                <li data-secondary-nav="setting-up-wifi-q2PL"><a href="#setting-up-wifi" data-menu-href="setting-up-wifi-q2PL">Setting up WiFi</a></li>
+                            </ul>
+                        <li class="middle-level" data-nav="using-community-libraries-OT07"><a href="#using-community-libraries" data-menu-href="using-community-libraries-OT07">Using Community Libraries</a></li>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="2.3">
+                    <a href="/guide/tools-and-features/dashboard">Dashboard</a>
+                </li>
+                <li class="top-level " data-level="2.4">
+                    <a href="/guide/tools-and-features/cli">Command Line</a>
+                </li>
+                <li class="top-level " data-level="2.5">
+                    <a href="/guide/tools-and-features/ifttt">IFTTT</a>
+                </li>
+                <li class="top-level " data-level="2.6">
+                    <a href="/guide/tools-and-features/webhooks">Webhooks</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="3" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="3.1">
+                    <a href="/guide/how-to-build-a-product/intro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="3.2">
+                    <a href="/guide/how-to-build-a-product/pcb-design">Designing your own PCB</a>
+                </li>
+                <li class="top-level " data-level="3.3">
+                    <a href="/guide/how-to-build-a-product/dashboard">Your Ruuvi Dashboard</a>
+                </li>
+                <li class="top-level " data-level="3.4">
+                    <a href="/guide/how-to-build-a-product/authentication">Authentication &amp; Security</a>
+                </li>
+                <li class="top-level " data-level="3.5">
+                    <a href="/guide/how-to-build-a-product/web-app">Building your own web app</a>
+                </li>
+                <li class="top-level " data-level="3.6">
+                    <a href="/guide/how-to-build-a-product/mobile-app">Building your own mobile app (iOS and Android)</a>
+                </li>
+                <li class="top-level " data-level="3.7">
+                    <a href="/guide/how-to-build-a-product/manufacturing">Manufacturing, programming, and testing</a>
+                </li>
+                <li class="top-level " data-level="3.8">
+                    <a href="/guide/how-to-build-a-product/further-considerations">Further considerations</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="#ruuvi-dev" data-href="ruuvi-dev-48yZ">Ruuvi Dev<a href="#ruuvi-dev" class="header-permalinks" data-menu-href="ruuvi-dev-48yZ"><i class="ion-link"></i></a></h1><h2 id="#getting-started" data-href="getting-started-udoo">Getting Started<a href="#getting-started" class="header-permalinks" data-menu-href="getting-started-udoo"><i class="ion-link"></i></a></h2><p><img src="/assets/images/ide-menu.jpg" alt="IDE Menu"></p>
+<p><strong>Ruuvi Dev</strong> is a desktop application that allows you to work with local copies of your firmware files. However, <strong>internet</strong> access is required as the files are pushed to the Particle Cloud for compilation and returns a binary. i.e. This is not an offline development tool, yet.</p>
+<p>All the commands are available from the <strong>Ruuvi</strong> menu. The menu changes depending on whether you're logged in or have selected a device, so some of the commands will only show up once you're in the right context.</p>
+<p><img src="/assets/images/ide-palette.jpg" alt="Command Palette"></p>
+<p>If you prefer a keyboard-oriented workflow, there's <strong>Command Palette</strong> with all available commands in a searchable list.</p>
+<p>To show the palette press <code>Command</code>+<code>Shift</code>+<code>P</code> keys together on a Mac or <code>Control</code>+<code>Shift</code>+<code>P</code> on Windows.</p>
+<p><img src="/assets/images/ide-toolbar.jpg" alt="Toolbar"></p>
+<p><strong>Tip</strong>: you can change toolbar's position in settings.</p>
+<p>There's also a toolbar on left side of IDE which contains shortcuts to the most frequently used commands like compiling and flashing (looks a lot like the one from <a href="https://build.ruuvi.io/">Web IDE (Build)</a>, doesn't it?).</p>
+<h3 id="#logging-in" data-href="logging-in-8BUR">Logging In<a href="#logging-in" class="header-permalinks" data-menu-href="logging-in-8BUR"><i class="ion-link"></i></a></h3><p>If you want to work on more advanced projects, Ruuvi Dev could be the choice for you. Head over and download latest release:</p>
+<p><a href="https://www.ruuvi.io/dev">Ruuvi Dev Download &gt;</a></p>
+<p><img src="/assets/images/ide-window.jpg" alt="IDE Window"></p>
+<p>To access most of features you need to log in using your Ruuvi account (which you can <a href="https://build.ruuvi.io/signup">create here</a>) by clicking the link on the bottom of the window.</p>
+<p><img src="/assets/images/ide-log-in.jpg" alt="Logging in"></p>
+<p>Enter your email and password then click the "Log In" button. After a successful login, the dialog will hide and a link will appear at the bottom showing your current account email.</p>
+<p><strong>NOTE</strong>: When using <a href="/guide/tools-and-features/cli">Command Line</a> you'll notice that log-in status is shared between Ruuvi Dev and CLI. So if you successfully ran <code>ruuvi login</code>, you will be logged in within the Particle Dev.</p>
+<h3 id="#selecting-device" data-href="selecting-device-w65h">Selecting Device<a href="#selecting-device" class="header-permalinks" data-menu-href="selecting-device-w65h"><i class="ion-link"></i></a></h3><p><img src="/assets/images/ide-select-ruuvitracker.jpg" alt="Selecting device"></p>
+<p>Most features like <strong>Flashing</strong> or accessing <strong>Cloud variables and functions</strong> require selecting a target device they will interact with.</p>
+<p>There are three ways to select ruuvitracker:</p>
+<ul>
+<li>Click <strong>Select device</strong> button in the left toolbar</li>
+<li>Click device's name on the bottom of the window</li>
+<li>Click on <strong>Ruuvi</strong> -&gt; <strong>Select device...</strong> menu</li>
+</ul>
+<p>Then you will see list of all your devices along with an indicator of online status and platform. You can search for a specific one by typing its name. Clicking on the device or pressing <code>Enter</code> when a device is selected will select it.</p>
+<h3 id="#compiling-code" data-href="compiling-code-0Rvo">Compiling Code<a href="#compiling-code" class="header-permalinks" data-menu-href="compiling-code-0Rvo"><i class="ion-link"></i></a></h3><p>Before compiling your project, make sure your project files are in a dedicated directory.</p>
+<p>Notes:</p>
+<ul>
+<li>If other files not related to your project are present in the project directory, you may experience errors when trying to compile.</li>
+<li>All the files have to be on the same level (no subdirectories) like <a href="/assets/images/ide-include-library.jpg">this</a></li>
+</ul>
+<p><img src="/assets/images/ide-compile.jpg" alt="Compile button"></p>
+<p>To compile your current project, click on the <strong>Compile in the cloud</strong> button. If your code doesn't contain errors, you'll see a new file named <strong>PLATFORM_firmware_X.bin</strong> in your project's directory (where <em>PLATFORM</em> is name of currently selected platform and <em>X</em> is a timestamp).</p>
+<p>Different devices usually require separate binaries (i.e. you can't flash RuuviTracker with firmware compiled for a RuuviTag) and resulting file is going to be compiled for platform of currently selected device.  If you don't have a device selected, the code is going to be compiled for the Core.</p>
+<p><strong>NOTE</strong>: Remember that <strong>*.cpp</strong> and <strong>*.ino</strong> files behave differently. You can read more about it on our <a href="http://support.ruuvi.io/hc/en-us/articles/204952620">support page</a>.</p>
+<p><img src="/assets/images/ide-compile-errors.jpg" alt="Compile errors"></p>
+<p>If there are some errors, you'll see a list of them allowing you to quickly jump to relevant line in code. You can show this list by clicking red error icon on the bottom of the window.</p>
+<h3 id="#flashing-device" data-href="flashing-device-3gEl">Flashing device<a href="#flashing-device" class="header-permalinks" data-menu-href="flashing-device-3gEl"><i class="ion-link"></i></a></h3><p><img src="/assets/images/ide-flash.jpg" alt="Flash button"></p>
+<p>When you're sure that your code is correct it's time to flash it to the device. To do this, click <strong>Flash using cloud</strong> button. Your code will be sent wirelessly to your device. If the request was successful, the LED on your device will begin flashing magenta as code is downloaded to it. The process is complete when the magenta is replaced by your online status indication patterns.</p>
+<h2 id="#cloud-variables-amp-functions" data-href="cloud-variables-amp-functions-NzOJ">Cloud variables &amp; functions<a href="#cloud-variables-amp-functions" class="header-permalinks" data-menu-href="cloud-variables-amp-functions-NzOJ"><i class="ion-link"></i></a></h2><p>To access all registered variables and functions, go to <strong>Ruuvi</strong> -&gt; <strong>Show cloud functions</strong>/<strong>Show cloud functions</strong> menus.</p>
+<h3 id="#variables" data-href="variables-XsEX">Variables<a href="#variables" class="header-permalinks" data-menu-href="variables-XsEX"><i class="ion-link"></i></a></h3><p><img src="/assets/images/ide-get-variable.gif" alt="Getting variable"></p>
+<p>All variables declared with <a href="/reference/firmware/#spark-variable-">Spark.variable()</a> are shown on the left side of panel. To poll latest variable value, click <strong>Refresh</strong> button for variable you want to update.</p>
+<p><img src="/assets/images/ide-watch-variable.gif" alt="Watching variable"></p>
+<p>When you want to check variable value constantly, you can click <strong>Watch</strong> button. When a variable is watched, Ruuvi Dev will fetch latest value every 5 seconds.</p>
+<h3 id="#functions" data-href="functions-qMdU">Functions<a href="#functions" class="header-permalinks" data-menu-href="functions-qMdU"><i class="ion-link"></i></a></h3><p><img src="/assets/images/ide-functions.gif" alt="Functions"></p>
+<p>To call an <a href="/reference/firmware/#spark-function-">exposed function</a> simply click on the button with its name. You'll see any data the function returns on the right side.</p>
+<p>You can also add parameters to the call by entering them to the right of button.</p>
+<h2 id="#managing-your-device" data-href="managing-your-device-rcSL">Managing Your Device<a href="#managing-your-device" class="header-permalinks" data-menu-href="managing-your-device-rcSL"><i class="ion-link"></i></a></h2><h3 id="#setting-up-wifi" data-href="setting-up-wifi-q2PL">Setting up WiFi<a href="#setting-up-wifi" class="header-permalinks" data-menu-href="setting-up-wifi-q2PL"><i class="ion-link"></i></a></h3><p><img src="/assets/images/ide-wifi-list.jpg" alt="WiFi list"></p>
+<p>To setup device's WiFi, connect it via USB and click <strong>Setup device's WiFi...</strong> button on the toolbar.</p>
+<p>If your device isn't in  you'll see animation showing how to enter that state.</p>
+<p>Next you'll see all available networks. The one you are currently connected to will be listed first.</p>
+<p>Select the one you want your device to use or choose <strong>Enter SSID manually</strong> (listed last) to specify all information by hand.</p>
+<p><img src="/assets/images/ide-wifi-save.jpg" alt="WiFi setup"></p>
+<p>Now you need to fill missing information and click <strong>Save</strong>. Your device will go dark for a second and then try to connect to the WiFi.</p>
+<h2 id="#using-community-libraries" data-href="using-community-libraries-OT07">Using Community Libraries<a href="#using-community-libraries" class="header-permalinks" data-menu-href="using-community-libraries-OT07"><i class="ion-link"></i></a></h2><p>Currently community libraries aren't supported natively (but we're working on it). You can still use them, just follow these instructions:</p>
+<p>Find the <a href="/guide/getting-started/build/ruuvitag/#using-libraries">library you want to use</a></p>
+<p><img src="/assets/images/build-libraries.jpg" alt="Link to GitHub repository"></p>
+<p>View it on GitHub</p>
+<p><img src="/assets/images/build-library-github.jpg" alt="Download link"></p>
+<p>Download the repository</p>
+<p><img src="/assets/images/github-download.jpg" alt="Correct files selected"></p>
+<p>Copy files from <code>firmware</code> directory <strong>without</strong> <code>examples</code> to your project directory</p>
+<p><img src="/assets/images/ide-selected-library.jpg" alt="Example project with include"></p>
+<p>Include library adding <code>#include "LIBRARY.h"</code> to your code</p>
+<p><img src="/assets/images/ide-include-library.jpg" alt="include-library"></p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/tools-and-features/intro" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/tools-and-features/dashboard" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/tools-and-features/intro" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/tools-and-features/dashboard" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+          analytics.load("PiTQtuDPGp3hKGGN3lU9GJvInSsnKBCR");
+        analytics.page()
+      }}();
+    </script>
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/redirect.ruuvi.io/redirect-banner.js"></script>
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/ga.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+</body>
+</html>
