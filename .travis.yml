@@ -15,7 +15,8 @@ install:
 - npm install
 - npm prune
 script: npm run build
-script: bash ./deploy.sh
+after_script:
+- script: bash ./deploy.sh
 env:
   global:
     GH_REF: github.com/ruuvi/ruuvi.github.io.git
