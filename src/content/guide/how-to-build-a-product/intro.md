@@ -48,7 +48,7 @@ We are building a network of professional services firms who can support you wit
 - Web development
 - Mobile app development
 - Contract manufacturing
-- Packaging
+
 - Logistics
 
 If you are interested in engaging us or our partners to help develop your product, please contact [our sales team](mailto:sales@ruuvi.io).
