@@ -144,13 +144,13 @@
                 </li>
                     <div class="in-page-toc-container">
                       <ul class="nav in-page-toc show">
-                        <li class="middle-level" data-nav="collecting-data-through-webhooks-or-an-event-stream-E5i0"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#collecting-data-through-webhooks-or-an-event-stream" data-menu-href="collecting-data-through-webhooks-or-an-event-stream-E5i0">Collecting data through webhooks or an event stream</a></li>
+                        <li class="middle-level" data-nav="collecting-data-through-webhooks-or-an-event-stream-bUMX"><i class="toggle-secondary-toc ion-arrow-right-b"></i><a href="#collecting-data-through-webhooks-or-an-event-stream" data-menu-href="collecting-data-through-webhooks-or-an-event-stream-bUMX">Collecting data through webhooks or an event stream</a></li>
                             <ul class="nav secondary-in-page-toc">
-                                <li data-secondary-nav="webhooks-FwF1"><a href="#webhooks" data-menu-href="webhooks-FwF1">Webhooks</a></li>
-                                <li data-secondary-nav="event-streams-eBib"><a href="#event-streams" data-menu-href="event-streams-eBib">Event streams</a></li>
+                                <li data-secondary-nav="webhooks-po6x"><a href="#webhooks" data-menu-href="webhooks-po6x">Webhooks</a></li>
+                                <li data-secondary-nav="event-streams-pgCd"><a href="#event-streams" data-menu-href="event-streams-pgCd">Event streams</a></li>
                             </ul>
-                        <li class="middle-level" data-nav="initiating-device-behavior-by-calling-functions-jYm8"><a href="#initiating-device-behavior-by-calling-functions" data-menu-href="initiating-device-behavior-by-calling-functions-jYm8">Initiating device behavior by calling functions</a></li>
-                        <li class="middle-level" data-nav="what-39-s-next--jIUj"><a href="#what-39-s-next-" data-menu-href="what-39-s-next--jIUj">What's next?</a></li>
+                        <li class="middle-level" data-nav="initiating-device-behavior-by-calling-functions-gbQM"><a href="#initiating-device-behavior-by-calling-functions" data-menu-href="initiating-device-behavior-by-calling-functions-gbQM">Initiating device behavior by calling functions</a></li>
+                        <li class="middle-level" data-nav="what-39-s-next--UqOE"><a href="#what-39-s-next-" data-menu-href="what-39-s-next--UqOE">What's next?</a></li>
                       </ul>
                     </div>
                 <li class="top-level " data-level="3.6">
@@ -169,7 +169,7 @@
       <div class="page-body">
         <div class='content-inner'>
           <div class="content" >
-            <h1 id="#building-your-own-web-app" data-href="building-your-own-web-app-jpRX">Building your own web app<a href="#building-your-own-web-app" class="header-permalinks" data-menu-href="building-your-own-web-app-jpRX"><i class="ion-link"></i></a></h1><p>For most connected products, the heart of the customer experience lies with the
+            <h1 id="#building-your-own-web-app" data-href="building-your-own-web-app-PPxz">Building your own web app<a href="#building-your-own-web-app" class="header-permalinks" data-menu-href="building-your-own-web-app-PPxz"><i class="ion-link"></i></a></h1><p>For most connected products, the heart of the customer experience lies with the
 hardware device and the firmware that runs it. But to unlock the true potential
 of the internet of things, to create a valuable, maybe even magical experience
 for your customers, there need to be capabilities that rely on the power of the
@@ -193,13 +193,13 @@ for community-generated libraries.</p>
 application in the last section on <a href="/guide/how-to-build-a-product/authentication/">Authentication &amp;
 Security</a>. This section will
 focus more specifically on building web applications.</p>
-<h2 id="#collecting-data-through-webhooks-or-an-event-stream" data-href="collecting-data-through-webhooks-or-an-event-stream-E5i0">Collecting data through webhooks or an event stream<a href="#collecting-data-through-webhooks-or-an-event-stream" class="header-permalinks" data-menu-href="collecting-data-through-webhooks-or-an-event-stream-E5i0"><i class="ion-link"></i></a></h2><p>Imagine you're making a social game that creates a live feed of pictures as
+<h2 id="#collecting-data-through-webhooks-or-an-event-stream" data-href="collecting-data-through-webhooks-or-an-event-stream-bUMX">Collecting data through webhooks or an event stream<a href="#collecting-data-through-webhooks-or-an-event-stream" class="header-permalinks" data-menu-href="collecting-data-through-webhooks-or-an-event-stream-bUMX"><i class="ion-link"></i></a></h2><p>Imagine you're making a social game that creates a live feed of pictures as
 customers use your product. Each time a customer hits a physical button on the
 hardware product, a picture is added to a Twitter-like timeline.
 To accomplish this, you will listen to the events published by all your products
 in customers' hands all over the world.</p>
 <p>There are two ways to do this.</p>
-<h3 id="#webhooks" data-href="webhooks-FwF1">Webhooks<a href="#webhooks" class="header-permalinks" data-menu-href="webhooks-FwF1"><i class="ion-link"></i></a></h3><p>Webhooks are well-understood and easy to set up. You write your web app with a
+<h3 id="#webhooks" data-href="webhooks-po6x">Webhooks<a href="#webhooks" class="header-permalinks" data-menu-href="webhooks-po6x"><i class="ion-link"></i></a></h3><p>Webhooks are well-understood and easy to set up. You write your web app with a
 URL that Ruuvi servers will call whenever one of your products publishes an
 event.</p>
 <p>You make a single Ruuvi API call to create the webhook, and from that moment
@@ -213,7 +213,7 @@ average once per minute, then your servers will have to handle, <em>on average</
 requests per second. The load will not be smooth either. There will be rapid
 spikes of hundreds of requests within a few seconds. Scale up your deployment
 and the situation only gets worse.</p>
-<h3 id="#event-streams" data-href="event-streams-eBib">Event streams<a href="#event-streams" class="header-permalinks" data-menu-href="event-streams-eBib"><i class="ion-link"></i></a></h3><p>If you've created an app that subscribes to Twitter's streaming API, you'll feel
+<h3 id="#event-streams" data-href="event-streams-pgCd">Event streams<a href="#event-streams" class="header-permalinks" data-menu-href="event-streams-pgCd"><i class="ion-link"></i></a></h3><p>If you've created an app that subscribes to Twitter's streaming API, you'll feel
 right at home with the other solution. Your server can subscribe to a single
 stream of server-sent events that will efficiently transport all the data your
 products can publish without all the HTTP overhead for every event.</p>
@@ -228,10 +228,10 @@ event stream. Here are some links to help out.</p>
 </ul>
 <p><em>Coming soon:</em> a easy-to-deploy heroku example.
 (Ping @zachary in the <a href="https://community.ruuvi.io/">forum</a> about this.)</p>
-<h2 id="#initiating-device-behavior-by-calling-functions" data-href="initiating-device-behavior-by-calling-functions-jYm8">Initiating device behavior by calling functions<a href="#initiating-device-behavior-by-calling-functions" class="header-permalinks" data-menu-href="initiating-device-behavior-by-calling-functions-jYm8"><i class="ion-link"></i></a></h2><p>Now imagine you want a customer's device to dance rainbows when someone likes a
+<h2 id="#initiating-device-behavior-by-calling-functions" data-href="initiating-device-behavior-by-calling-functions-gbQM">Initiating device behavior by calling functions<a href="#initiating-device-behavior-by-calling-functions" class="header-permalinks" data-menu-href="initiating-device-behavior-by-calling-functions-gbQM"><i class="ion-link"></i></a></h2><p>Now imagine you want a customer's device to dance rainbows when someone likes a
 picture they've posted. The web app will need to hit the Ruuvi API to call a
 function on one device to cause it to dance rainbows.</p>
-<h2 id="#what-39-s-next-" data-href="what-39-s-next--jIUj">What's next?<a href="#what-39-s-next-" class="header-permalinks" data-menu-href="what-39-s-next--jIUj"><i class="ion-link"></i></a></h2><p>Expect significant updates to this page in August 2015. We can't wait to show
+<h2 id="#what-39-s-next-" data-href="what-39-s-next--UqOE">What's next?<a href="#what-39-s-next-" class="header-permalinks" data-menu-href="what-39-s-next--UqOE"><i class="ion-link"></i></a></h2><p>Expect significant updates to this page in August 2015. We can't wait to show
 you how just how easy it is to build a web app for your product on Ruuvi!</p>
 <p>If your product is better suited for a mobile app, you will wantto
 <a href="/guide/how-to-build-a-product/mobile-app/">build your iOS and Android mobile apps</a>

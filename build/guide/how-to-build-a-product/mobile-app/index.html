@@ -147,9 +147,9 @@
                 </li>
                     <div class="in-page-toc-container">
                       <ul class="nav in-page-toc show">
-                        <li class="middle-level" data-nav="prerequisites-for-building-amp-deploying-mobile-apps-IhuE"><a href="#prerequisites-for-building-amp-deploying-mobile-apps" data-menu-href="prerequisites-for-building-amp-deploying-mobile-apps-IhuE">Prerequisites for Building &amp; Deploying Mobile Apps</a></li>
-                        <li class="middle-level" data-nav="two-tier-sdk-TDdz"><a href="#two-tier-sdk" data-menu-href="two-tier-sdk-TDdz">Two-tier SDK</a></li>
-                        <li class="middle-level" data-nav="how-to-get-started--FyXS"><a href="#how-to-get-started-" data-menu-href="how-to-get-started--FyXS">How To Get Started?</a></li>
+                        <li class="middle-level" data-nav="prerequisites-for-building-amp-deploying-mobile-apps-EByu"><a href="#prerequisites-for-building-amp-deploying-mobile-apps" data-menu-href="prerequisites-for-building-amp-deploying-mobile-apps-EByu">Prerequisites for Building &amp; Deploying Mobile Apps</a></li>
+                        <li class="middle-level" data-nav="two-tier-sdk-Ofr6"><a href="#two-tier-sdk" data-menu-href="two-tier-sdk-Ofr6">Two-tier SDK</a></li>
+                        <li class="middle-level" data-nav="how-to-get-started--xTuu"><a href="#how-to-get-started-" data-menu-href="how-to-get-started--xTuu">How To Get Started?</a></li>
                       </ul>
                     </div>
                 <li class="top-level " data-level="3.7">
@@ -165,13 +165,13 @@
       <div class="page-body">
         <div class='content-inner'>
           <div class="content" >
-            <h1 id="#building-your-own-mobile-app" data-href="building-your-own-mobile-app-damk">Building your own Mobile App<a href="#building-your-own-mobile-app" class="header-permalinks" data-menu-href="building-your-own-mobile-app-damk"><i class="ion-link"></i></a></h1><p>While using your RuuviTag, you've probably come across our Ruuvi mobile apps (iOS and Android). You may have used these apps to set up your device and "tinker" with the GPIO pins.</p>
+            <h1 id="#building-your-own-mobile-app" data-href="building-your-own-mobile-app-k79E">Building your own Mobile App<a href="#building-your-own-mobile-app" class="header-permalinks" data-menu-href="building-your-own-mobile-app-k79E"><i class="ion-link"></i></a></h1><p>While using your RuuviTag, you've probably come across our Ruuvi mobile apps (iOS and Android). You may have used these apps to set up your device and "tinker" with the GPIO pins.</p>
 <p>Ruuvi provides native mobile SDKs for both iOS (Objective-C and Swift) and Android (Java) that allow you to build your own branded app for setting up and interacting with your product. If all you need is the set-up process, you can build your own branded app by editing a 15-line configuration file (no software development necessary). If you want to build a complete mobile interface, our iOS and Android SDKs provide native access to our API for interfacing with the product.</p>
 <p>You have already learned a lot about what you'll need to do to build your web
 application in the last section on <a href="/guide/how-to-build-a-product/authentication/">Authentication &amp;
 Security</a>. This section will
 focus more specifically on building mobile applications.</p>
-<h3 id="#prerequisites-for-building-amp-deploying-mobile-apps" data-href="prerequisites-for-building-amp-deploying-mobile-apps-IhuE">Prerequisites for Building &amp; Deploying Mobile Apps<a href="#prerequisites-for-building-amp-deploying-mobile-apps" class="header-permalinks" data-menu-href="prerequisites-for-building-amp-deploying-mobile-apps-IhuE"><i class="ion-link"></i></a></h3><p><strong>iOS</strong></p>
+<h3 id="#prerequisites-for-building-amp-deploying-mobile-apps" data-href="prerequisites-for-building-amp-deploying-mobile-apps-EByu">Prerequisites for Building &amp; Deploying Mobile Apps<a href="#prerequisites-for-building-amp-deploying-mobile-apps" class="header-permalinks" data-menu-href="prerequisites-for-building-amp-deploying-mobile-apps-EByu"><i class="ion-link"></i></a></h3><p><strong>iOS</strong></p>
 <ul>
 <li>Mac computer/laptop running latest OSX</li>
 <li><a href="https://developer.apple.com/programs/">Apple developer account</a></li>
@@ -205,10 +205,10 @@ focus more specifically on building mobile applications.</p>
 </li>
 </ul>
 <p><img src="/assets/images/apple-android.png" alt=""></p>
-<h3 id="#two-tier-sdk" data-href="two-tier-sdk-TDdz">Two-tier SDK<a href="#two-tier-sdk" class="header-permalinks" data-menu-href="two-tier-sdk-TDdz"><i class="ion-link"></i></a></h3><p>There are two parts to the Ruuvi Mobile SDK: the Cloud SDK and the Device Setup library.
+<h3 id="#two-tier-sdk" data-href="two-tier-sdk-Ofr6">Two-tier SDK<a href="#two-tier-sdk" class="header-permalinks" data-menu-href="two-tier-sdk-Ofr6"><i class="ion-link"></i></a></h3><p>There are two parts to the Ruuvi Mobile SDK: the Cloud SDK and the Device Setup library.
 In a nutshell, the <strong>Cloud SDK</strong> is a library that enables your mobile app to interact with internet-connected hardware through the Ruuvi Cloud. It serves the same purpose as <a href="http://docs.ruuvi.io/ruuvitag/javascript/">ParticleJS</a> — it’s an easy-to-use wrapper for our REST API, accessible from Objective-C and Swift. The <strong>Device Setup library</strong> allows you to create a setup wizard within your app for connecting your device to the internet with two lines of code.</p>
-<h3 id="#how-to-get-started-" data-href="how-to-get-started--FyXS">How To Get Started?<a href="#how-to-get-started-" class="header-permalinks" data-menu-href="how-to-get-started--FyXS"><i class="ion-link"></i></a></h3><p>Let's go through a basic step by step example on how to integrate and use the mobile SDKs into a basic app, for both platforms:</p>
-<h4 id="#ios" data-href="ios-YROy">iOS<a href="#ios" class="header-permalinks" data-menu-href="ios-YROy"><i class="ion-link"></i></a></h4><p>Both the Cloud SDK and Device Setup library are available through CocoaPods, the most widely used iOS dependency manager. If you don’t have it, you’ll need to start by installing the Cocoapods <code>ruby gem</code>; check out the CocoaPods site for more info.</p>
+<h3 id="#how-to-get-started-" data-href="how-to-get-started--xTuu">How To Get Started?<a href="#how-to-get-started-" class="header-permalinks" data-menu-href="how-to-get-started--xTuu"><i class="ion-link"></i></a></h3><p>Let's go through a basic step by step example on how to integrate and use the mobile SDKs into a basic app, for both platforms:</p>
+<h4 id="#ios" data-href="ios-wE0a">iOS<a href="#ios" class="header-permalinks" data-menu-href="ios-wE0a"><i class="ion-link"></i></a></h4><p>Both the Cloud SDK and Device Setup library are available through CocoaPods, the most widely used iOS dependency manager. If you don’t have it, you’ll need to start by installing the Cocoapods <code>ruby gem</code>; check out the CocoaPods site for more info.</p>
 <p><strong>Starting from scratch</strong></p>
 <p>Go ahead and create a new app in XCode by going to File menu and then:
 New -&gt; Project -&gt; iOS Application -&gt; Single View Application -&gt; Next
@@ -315,14 +315,14 @@ Well Done! You've just created a mobile basic app that can:</p>
 <p>You can find the source code for the Cloud SDK under our GitHub account:</p>
 <p><a href="https://github.com/spark/spark-sdk-ios">Repository of iOS Cloud SDK</a></p>
 <p><a href="https://github.com/spark/spark-setup-ios">Repository of iOS Device Setup library</a></p>
-<h4 id="#android" data-href="android-jdOR">Android<a href="#android" class="header-permalinks" data-menu-href="android-jdOR"><i class="ion-link"></i></a></h4><p>The overall process for building an Android app is very similar to that of building an iOS app, but with a native Java experience so Android developers will feel right at home.
+<h4 id="#android" data-href="android-lc8R">Android<a href="#android" class="header-permalinks" data-menu-href="android-lc8R"><i class="ion-link"></i></a></h4><p>The overall process for building an Android app is very similar to that of building an iOS app, but with a native Java experience so Android developers will feel right at home.
 One major difference in the user experience of setting up a RuuviTag from an Android app vs. an iOS app is that on Android an app can control which Wi-Fi network the phone connects to, whereas on iOS the user has to leave the app, go to settings, and change the Wi-Fi network. We’ve made both flows as easy as possible, but it’s definitely smoother on Android since the user doesn’t have to do as much.</p>
 <p>The Cloud SDK and Device Setup library for Android are available on our GitHub and through <a href="https://bintray.com/bintray/jcenter">JCenter</a> as Apache Maven packages for easy integration as dependencies in an Android Studio project.</p>
 <p>The guide for how to create an Android app for Ruuvi devices in Android studio is coming soon.
 Meanwhile you can find the source code for the Android Cloud SDK and Device Setup under our GitHub account:</p>
 <p><a href="https://github.com/spark/spark-sdk-android">Repository of Android Cloud SDK</a></p>
 <p><a href="https://github.com/spark/spark-setup-android">Repository of Android Device Setup library</a></p>
-<h4 id="#what-39-s-next-" data-href="what-39-s-next--WgLk">What's next?<a href="#what-39-s-next-" class="header-permalinks" data-menu-href="what-39-s-next--WgLk"><i class="ion-link"></i></a></h4><p>Well now you've written all of your software, so it's probably time to start:</p>
+<h4 id="#what-39-s-next-" data-href="what-39-s-next--zw5d">What's next?<a href="#what-39-s-next-" class="header-permalinks" data-menu-href="what-39-s-next--zw5d"><i class="ion-link"></i></a></h4><p>Well now you've written all of your software, so it's probably time to start:</p>
 <p><a href="../manufacturing">Manufacturing &gt;</a>.</p>
 
             <div class="mobile-arrows">
