@@ -10,7 +10,7 @@ order: 9
 
 Ruuvi is an open-source platform. You might find something you'd like changed, a feature you'd like implemented, or a bug you see a fix for. If so, you can create a pull request or an issue on one of our open-source Github repos. Here's a quick run-down of some repos you might want to know about, as well as some information on how to contribute.
 
-## Open-Source Repos
+## Open-Source Repos!
 
 Go to http://github.com/spark to see all the available repositories. There are quite a few! Here's a guide to the most popular repos.
 
