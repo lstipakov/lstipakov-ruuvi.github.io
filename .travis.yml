@@ -9,8 +9,15 @@ cache:
   - node_modules
 before_install:
 - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
-- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && git submodule update --init --recursive && cd api-node && git fetch && git merge origin/layout && cd .. || true'
+- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && git submodule update --init --recursive
+  && cd api-node && git fetch && git merge origin/layout && cd .. || true'
 install:
 - npm install
 - npm prune
 script: npm run build
+after_install:
+- bash ./deploy.sh
+env:
+  global:
+    GH_REF: github.com/ruuvi/ruuvi.github.io.git
+    secure: WVtTGiXPnmScP9D+sVJnE90WYX37+9y+93BubfgMKBD4+7iStOD7DqW7mgnMLUZTZlwzDyO+ZLrk8N59mlfQbqFErsxENV+nF99ytfMbgIGwn0uQIogpg58HgOVBMcjgkOEweYNRWY8grVlBJ0RuE3UppjD0yFptI2jp0tM5Sf81VmQlS5UzQ7B3TJ5UvvRpOU4LT+2zz+y/6BxO33qFErg40CUaoHk39OEWoa2RAqVzvFWGcN3qRiKcGSUFIRw1V4s7hdazo/3j6zpNhHJ7lU328xMOCLDVini7SMGphp4FPOLy0sbD+Baku7ZJft2o888FLl000PrukOBgy5hSecnc1Wivm6fqpgcAAqJ9JdAsP6HHNwLNDf6QqN0ZNcOfxSxvNxSjAc3Xu1nkk954AUurBzYQIk2MMlKH8IZ3m2K/a1+oTmKNlq+O6ppFFhoTRTBoRxwGBO7FGCCl0IhtfZJBxgU8wPKGKMYHVl/eAHVCO5gcan0O0spMYcXt84tc0KPLeEGFPfb/EfZNd5yzkPce5NcnXGtlPENwxoxkEg5CiBj/uwWsut0KcwaSiJgF+OdLldRZ6Q1hRMjA2VatT8hMqQv8LfjRtcEL0bF0udt6JaR2+suCo8q7n3xQ5TPGOZWBVYJ8t8TaecbQPIhj5czURryLaw7M6kT7NSXkolo=
