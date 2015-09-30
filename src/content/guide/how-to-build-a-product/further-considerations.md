@@ -23,4 +23,3 @@ Finally, here's a short list of things to consider in the design and delivery of
 - How will you use over-the-air firmware updates to improve your product once you've shipped it to customers? What cheap sensors and actuators could you add to your product that might be useful in the future?
 - How might your distributors and other business partners benefit from the fact that your product is connected?
 
-Good luck and godspeed!
