@@ -9,6 +9,7 @@ git config user.email "test@test.com"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
+git add .
 git commit -am "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote
