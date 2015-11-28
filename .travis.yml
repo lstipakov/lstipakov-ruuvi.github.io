@@ -4,6 +4,9 @@ node_js:
 - '0.12'
 git:
   submodules: false
+branches:
+  only:
+    - layout
 cache:
   directories:
   - node_modules

@@ -12,23 +12,8 @@ html
 		link(href="/assets/css/style.css" rel="stylesheet")
 		link(rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css")
 
-		script(type='text/javascript')
-			| var devices = !{JSON.stringify(devices)};
-			| var forkLocations = !{JSON.stringify(forkLocations)};
-		script(type='text/javascript').
-			if (devices.length === 1) {
-				var location = forkLocations[devices[0]];
-				- window.location.replace(location);
-			} else {
-				var lastDevice = localStorage.getItem('lastDevice');
-				if (lastDevice && forkLocations[lastDevice]) {
-					- window.location.replace(forkLocations[lastDevice]);
-				}
-			}
-
 	body
 		script(src='/assets/js/docs.js')
-		script(src='/assets/js/ga.js')
 		script(src="http://localhost:35729/livereload.js")
 		#docs
 			.header
