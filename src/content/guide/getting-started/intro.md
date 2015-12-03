@@ -8,22 +8,16 @@ order: 1
 
 # Introduction to THE GUIDE
 
-![](/assets/images/family_portrait_outlines.png)
-
-This guide will show you how to use Ruuvi to make a connected device, from the first time you connect to the cloud to the day you manufacture and ship your connected product.
-
-Anxious to connect right away?
+This guide will help you to tinker with the Ruuvi devices.
 
 
 {{#if ruuvitag}}
-[CONNECT MY RUUVITAG >](/guide/getting-started/start/ruuvitag/#step-1-power-on-your-device)
+[POWER ON MY RUUVITAG >](/guide/getting-started/start/ruuvitag/#step-1-power-on-your-device)
 {{/if}}
 
 {{#if ruuvitracker}}
-[CONNECT MY RUUVITRACKER >](/guide/getting-started/start/ruuvitracker/#step-1-power-on-your-device)
+[POWER ON MY RUUVITRACKER >](/guide/getting-started/start/ruuvitracker/#step-1-power-on-your-device)
 {{/if}}
-
-[I'M AT A HACKATHON >](/guide/getting-started/hackathon)
 
 Or read on!
 

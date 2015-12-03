@@ -1,5 +1,4 @@
 ## Ruuvi Documentation [![Build Status](https://travis-ci.org/ruuvi/ruuvi.github.io.svg)](https://travis-ci.org/ruuvi)
-=======
 
 Here you'll find the documentation for the Ruuvi platforms.
 
