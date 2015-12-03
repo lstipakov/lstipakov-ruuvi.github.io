@@ -1,76 +1,14 @@
-## Ruuvi Documentation [![Build Status](https://travis-ci.org/spark/docs.svg?branch=master)](https://travis-ci.org/spark/docs)
+## Ruuvi Documentation [![Build Status](https://travis-ci.org/ruuvi/ruuvi.github.io?branch=master)](https://travis-ci.org/ruuvi)
 =======
 
-Here you'll find the documentation for the Ruuvi platform, including the Particle Cloud, RuuviTag, and Spark RuuviTracker.
+Here you'll find the documentation for the Ruuvi platforms.
 
-To view this documentation, visit [our website](http://docs.ruuvi.io), where the documentation is hosted.
+To view this documentation, visit [ruuvi.github.io](http://ruuvi.github.io).
 
-**Note**: This is a new public repository as of May 18, 2015. All
-outstanding pull requests from the old docs repository have been closed.
-Please re-open them in this repo.
-
-### Installation
-
-To host this documentation locally, you'll need Node.js and npm:
-
-    brew install nodejs
-
-Once you have Node.js set up, navigate to this repository's directory on your machine, and then:
-
-    npm install
-
-to install any other necessary dependencies.
-
-### Hosting locally
-
-This documentation uses a fabulous tool from the folks at Segment called [Metalsmith](http://www.metalsmith.io). Metalsmith is a static site generator that builds static HTML sites from source material in other formats; in this case, Markdown and Handlebars.
-
-To run a locally hosted version of the documentation, follow the installation instructions above, and then within the 'docs' directory type in your terminal:
-
-`npm start`
-
-This will set up a server running at `http://localhost:8080`. If you make changes to the source content, your browser should automatically refresh using `livereload`.
-
-### Testing
-
-To run the tests locally, run `npm test` from the root of the
-repository. This will tell you whether the build will pass on Travis or
-not.
-
-### Deployment
-
-When updated documentation is pushed to the master branch, it is automatically pushed to Amazon S3 by Travis CI.
-
-TODO: FURTHER INSTRUCTIONS FOR DEPLOYMENT
-
-To see the latest build, visit the [Travis CI page](https://travis-ci.org/spark/docs).
-
-### Organization
-
-The majority of the content herein is stored in the `src/content/en` directory as a set of Markdown files. Assets such as images and javascript are stored in the `src/assets` directory.
-
-Within the `en` subdirectory, there are three subfolders: `ruuvitracker`,
-`ruuvitag`, and `shared`. Files in `ruuvitracker` will only be shown in the menu when the user
-is viewing RuuviTracker-specific docs, and `ruuvitag` files will be visible when
-viewing RuuviTag-specific docs. Files in `shared` will be nested under both
-devices, so put pages here that apply to both the RuuviTracker and the RuuviTag.
-
-If you create a new file under the `shared`, please add `shared: true`
-to the front-matter at the beginning of the MD file so that the link to
-edit the file on GitHub will be correct. For instance:
-
-```
----
-word: API
-title: Cloud code (API)
-order: 4
-shared: true
----
-```
 
 ### Structuring your content
 
-The docs dynamically generate a table of contents for navigation purposes based on the headers (i.e. `###`) that you use on each page. It is important to note that _order and heirarchy matters_ when you are designing the organization of content on your page. Your page should include the following:
+The docs dynamically generate a table of contents for navigation purposes based on the headers (i.e. `###`) that you use on each page. It is important to note that _order and hierarchy matters_ when you are designing the organization of content on your page. Your page should include the following:
 
 * 1 `h1` at the top of the page that will serve as the title of the page. You can even copy the `title` directly from the front-matter of the markdown file like this: `# {{title}}`
 
@@ -103,16 +41,6 @@ using a special helper, like this:
 {{/if}}
 ```
 
-### Tests
-
-To run the test scripts, run `npm test`.
-
-### Attributions
-
-Some of this documentation is derived from the [Arduino documentation](http://arduino.cc/en/Reference), as the Arduino/Wiring language and libraries are used extensively on the Spark RuuviTracker.
-
-This documentation was originally built using [Flatdoc](http://ricostacruz.com/flatdoc/), an awesome tool for building beautiful documentation from simple Markdown files. We have made many modifications since, but the inspiration remains.
-
 ### Contributions
 
 This documentation is managed by Ruuvi, but supported by the community. We welcome contributions such as:
@@ -121,12 +49,12 @@ This documentation is managed by Ruuvi, but supported by the community. We welco
 * Edits to improve clarity
 * Additional annotated examples for others to follow
 * Additional content that would help provide a complete understanding of the Ruuvi platform
-* Translations to other languages
 
 Making a contribution is as simple as forking this repository, making edits to your fork, and contributing those edits as a pull request. For more information on how to make a pull request, see [Github's documentation](https://help.github.com/articles/using-pull-requests/).
 
-### License
 
-These files have been made available online through a [Creative Commons Attribution-ShareAlike 3.0 license](http://creativecommons.org/licenses/by-sa/3.0/us/).
+### Attributions and license
+
+The motor of this documentation is derived from https://github.com/spark/docs that is licensed using [Creative Commons Attribution-ShareAlike 3.0 license](http://creativecommons.org/licenses/by-sa/3.0/us/). Everything in this repository is licensed using same license.
 
 You are welcome to distribute, remix, and use these files for commercial purposes. If you do so, please attribute the original design to Spark Labs, Inc. both on the website and on the physical packaging of the product or in the instruction manual. All derivative works must be published under the same or a similar license.
