@@ -3,7 +3,7 @@ word: RuuviTag Rev.B2
 title: RuuviTag Rev.B2 Specs
 order: 1
 columns: 3
-template: datasheet.hbs
+template: spec.hbs
 ---
 # RuuviTag Rev.B2 Specifications
 
