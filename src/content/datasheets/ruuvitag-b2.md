@@ -1,132 +1,41 @@
 ---
 word: RuuviTag Rev.B2
-title: RuuviTag Rev.B2 Specsheet
+title: RuuviTag Rev.B2 Specs
 order: 1
 columns: 3
 template: datasheet.hbs
 ---
+# RuuviTag Rev.B2 Specifications
 
-{{#if ruuvitracker}}
-  # Spark RuuviTracker Line
-{{/if}}
+### [Nordic Semiconductor nRF52832](https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF52832)
+The nRF52832 SoC is a powerful, highly flexible ultra-low power multiprotocol SoC ideally suited for Bluetooth® Smart, ANT and 2.4GHz ultra low-power wireless applications. The nRF52832 SoC is built around a 32-bit **ARM® Cortex™-M4F** CPU with 512kB + 64kB RAM. The embedded 2.4GHz transceiver supports Bluetooth Smart, ANT and proprietary 2.4 GHz protocol stack. It is on air compatible with the nRF51 Series, nRF24L and nRF24AP Series products from Nordic Semiconductor.
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ja3USlRVAok?rel=0" frameborder="0" allowfullscreen></iframe>
 
-{{#if ruuvitag}}
-  # RuuviTag Line
-{{/if}}
+### [Bosch BME280 environmental sensor](http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bme280/bme280_1)
+The BME280 is an integrated environmental sensor developed specifically for mobile applications where size and low power consumption are key design constraints. The unit combines individual high linearity, high accuracy sensors for pressure, humidity and temperature in an 8-pin metal-lid 2.5 x 2.5 x 0.93 mm3 LGA package, designed for low current consumption (3.6 μA @1Hz), long term stability and high EMC robustness. The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.  
+<iframe width="640" height="360" src="https://www.youtube.com/embed/0XuL2fY7_NQ?rel=0" frameborder="0" allowfullscreen></iframe>
+  
+### Accelerometer
 
-Here's a quick "what's in the box" for each of our offered kits. More detail is available in the shields and kits shown in other parts of the datasheet section.
+### 2.4GHz antenna
+RuuviTag's has a 1/4 wavelength monopole PCB antenna. The range is up to 100 meters.
 
-{{#if ruuvitracker}}
-### Spark RuuviTracker
-![]({{assets}}/images/ruuvitracker-contents.jpg)
+### 13.56MHz NFC antenna
+NFC™-A tag support is included on RuuviTag. Out-of-Band (OOB) pairing using NFC simplifies the process of authenticated pairing between two Bluetooth Smart devices by exchanging authentication information over the NFC link.
 
-- (1) Spark RuuviTracker
-- (1) USB micro B cable
-- (1) Breadboard
+### Buttons
+Reset button and user button.
 
-### Spark RuuviTracker Maker Kit
+### LEDs
+RuuviTag has two user-programmable LEDs.
 
-![]({{assets}}/images/ruuvitracker-mkit.jpg)
+### Battery
+We've developed an innovative battery holder mechanism for the RuuviTag. It can hold **CR2430**, **CR2450** and **CR2477** Lithium coin cell batteries. The circuit board material (FR4) bends a bit and keeps the battery firmly on its place.
 
-- Basics
-  - (1) Spark RuuviTracker - u.FL or CA
-  - (1) USB Micro B Cable
-  - (1) Breadboard
-- Inputs
-  - (3) Mini Pushbuttons
-  - (2) DPDT Switch
-  - (2) Tilt Sensor
-  - (1) Temperature Sensor
-  - (1) Force-Sensitive Resistor
-  - (2) Photo Resistors
-  - (2) Thermistor
-  - (1) 10K Rotary Potentiometer
-- Outputs
-  - (5) Basic LED - Red
-  - (5) Basic LED - Green
-  - (1) RGB LEDs
-  - (1) Micro Servo
-  - (1) Mini DC Motor
-  - (1) Vibration Motor
-  - (1) Piezo Buzzer
-- Connectors
-  - (1) Deluxe Jumper Wire Pack
-  - (1) Breadboard
-  - (1) Proto-board
-  - (5) 8-Pin Female Headers
-  - (2) 40-Pin Male Breakaway Headers
-  - (1) 40-Pin Male Breakaway Dual-Headers
-  - (10) Resistor 330-Ohm
-  - (10) Resistor 1K-Ohm
-  - (10) Resistor 10K-Ohm
-  - (10) Ceramic Capacitor - 10nF
-  - (10) Ceramic Capacitors 100nF
-  - (5) Electrolytic Capacitors 100uF
-  - (1) NPN Transistor
-  - (6) Diode
-  - (1) Shift Register IC
-{{/if}}
+### Reverse polarity protection
+It's not possible to break the device by attaching battery upside down. RuuviTag has an on-board high-efficiency reverse polarity protection circuitry.
 
-{{#if ruuvitag}}
-### RuuviTag
-![]({{assets}}/images/ruuvitag-matchbox.jpg)
+### Debug port
+Altought it's possible to flash and debug RuuviTag Over-the-Air, we decided to provide a standard 0.05" pitch 10-pin ARM serial wire debug port. All the debug pins are also available on test pads on bottom layer.
 
-- (1) RuuviTag
-- (1) Protective disposable paper strip with ruuvitag joke
-
-### RuuviTag Kit
-
-![]({{assets}}/images/phokit-contents.jpg)
-
-- (1) RuuviTag
-- (1) USB Micro B Cable
-- (1) Breadboard
-- (1) Photoresistor
-- (1) Basic LED - Red
-- (2) Resistor 220-Ohm
-
-### RuuviTag Maker Kit
-
-![]({{assets}}/images/ruuvitag-mkit-grey.png)
-
-- Basics
-  - (1) RuuviTag with Headers
-  - (1) USB Micro B Cable
-  - (1) Flex antenna
-  - (1) Breadboard
-  - (1) Proto-board
-  - (1) Deluxe Jumper Wire Pack
-  - (10) Male to Female Jumper Wires
-  - (1) Battery holder (4xAA, 2x2 with switch)
-- Headers
-  - (5) 12-Pin Female Headers
-  - (2) 40-Pin Male Breakaway Headers
-- Capacitors
-  - (10) Ceramic Capacitor 10nF
-  - (10) Ceramic Capacitors 100nF
-  - (5) Electrolytic Capacitors 100uF
-- LEDs and Diodes
-  - (5) Basic LED - Red
-  - (5) Basic LED - Green
-  - (1) RGB LED
-  - (6) Diode
-  - (1) IR LED
-- Resistors
-  - (10) Resistor 220-Ohm
-  - (10) Resistor 1K-Ohm
-  - (10) Resistor 10K-Ohm
-  - (2) Photoresistors
-  - (1) 10K Rotary Potentiometer
-- Misc Components
-  - (1) Temperature Sensor
-  - (1) Temperature Sensor (covered)
-  - (1) Piezo Buzzer
-  - (3) Mini Pushbuttons
-  - (2) SPDT Switch
-  - (1) SPDT Relay
-  - (1) NPN Transistor
-  - (1) PIR sensor
-  - (1) Pancake Vibration Motor
-  - (1) Micro Servo
-  - (1) Serial OLED LCD,0.96"
-{{/if}}
+###
