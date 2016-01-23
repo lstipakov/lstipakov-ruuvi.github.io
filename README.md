@@ -32,17 +32,17 @@ using a special helper, like this:
 
 ```
 {{#if ruuvitag}}
-  RUUVITAG SPECIFIC STUFFZ
+  RUUVITAG SPECIFIC STUFF
 {{/if}}
 
 {{#if ruuvitracker}}
-  RUUVITRACKER SPECIFIC STUFFZ
+  RUUVITRACKER SPECIFIC STUFF
 {{/if}}
 ```
 
 ### Contributions
 
-This documentation is managed by Ruuvi, but supported by the community. We welcome contributions such as:
+This documentation is managed by Ruuvi Innovations Ltd, but is supported by the community. We welcome contributions such as:
 
 * Edits to improve grammar or fix typos
 * Edits to improve clarity

@@ -7,54 +7,50 @@ order: 1
 
 # {{title}}
 
-Our primary goal at Ruuvi is to help product creators (engineers and entrepreneurs) bring new connected products to market.
+Our primary goal at Ruuvi is to have fun by designing open sourced products you can tinker with. We truly love what we do and we're having so good time developing innovative products for you. 
 
-This guide will teach you everything you need to transition from a breadboard prototype to a device manufactured at scale running on Ruuvi's software platform. Many of the lessons within are broadly applicable to a wide range of products (whether they run on our platform or not). Other lessons are platform-specific. If you are an experienced engineer with manufacturing experience, some of these lessons will feel juvenile; if so, simply skip over the bits that you already know.
+In addition to hobbyists, also product creators (engineers and entrepreneurs) can use Ruuvi products to prototype their ideas and products. If Ruuvi product isn't exactly what you're looking for, it can be customized to meet your requirements. 
 
-### But wait, I thought you were a hardware company?
+### Great, but what if we need help?
 
-Sort of. We're a software company that serves hardware companies. In order to most effectively deliver our software platform, we sell hardware (development kits and modules) that are pre-programmed with our software stack. All of our magic is in the software.
+Building a hardware product is a complicated process and requires a lot of knowlegde on many areas. To design and produce a circuit board, you have to complete these steps:
 
-### Prerequisites
+- Requirement specifications
+- Technical specifications
+- Component selection
+- Schematics
+- Footprints
+- PCB design
+- PCB manufacturing
+- Stencil manufacturing
+- Component sourcing
+- PCB assembly
+- Quality control & testing
+- Packaging
 
-Before you start to follow this guide, you should already have:
+...and that's not all. Usually you'll need to pay attention to these:
 
-- A functional prototype running on a RuuviTracker, RuuviTag, P0, P1, or Electron
-- A working knowledge of Ruuvi's development tools and cloud platform
-
-If you are not yet familiar with these tools, please read the previous guides above (["Getting started"](/guide/getting-started/intro) and ["Tools and features"](/guide/tools-and-features/intro)).
-
-### Steps to deliver a product on the Ruuvi platform
-
-At a high level, you should expect to follow these steps to transition from your first functional prototype to a mass-manufactured product:
-
-- Design your own printed circuit board (PCB)
-- Set up your product in Ruuvi's [dashboard](https://dashboard.ruuvi.io)
-- Build your own web app
-- Build your own mobile apps (iOS and Android)
-- Manufacture, program, and test devices
-
-There are, of course, other issues you will likely encounter, such as injection molded plastic tooling, packaging, etc. This tutorial will focus strictly on electronics and software, as that is where the Ruuvi platform is most relevant.
-
-### What if I need help?
-
-It takes a village to build a hardware product. It's uncommon for any company to try to do everything themselves; you will likely engage a variety of professional services firms or freelancers as you develop your product.
-
-We are building a network of professional services firms who can support you with the following aspects of your product:
-
-- Mechanical engineering
-- Electrical engineering
+- Mechanical engineering (enclosure)
+- CE/FCC approvals
 - Firmware development
 - Web development
 - Mobile app development
-- Contract manufacturing
-
 - Logistics
 
-If you are interested in engaging us or our partners to help develop your product, please contact [our sales team](mailto:sales@ruuvi.io).
+If you don't have required expertise to handle these by yourself, we want to help. [Drop us a message](mailto:info@ruuvi.com) and tell more of your needs. If we design something like this for you, there won't be any license restrictions. It will be your own product.
 
-### Let's get started!
+### License
+Ruuvi hardware products are licensed using [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/4.0/) free culture license. This means you're allowed to
 
-Okay! First, let's start with:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
 
-[Designing your own PCB >](../pcb-design).
+Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+However, neither the name of the Ruuvi product nor the names of its contributors may be used to endorse or promote products derived from the project without specific prior written permission. While unofficial products should not have "Ruuvi" in their name, it's okay to describe your product in relation to the Ruuvi projects. For more info, drop us a line: [license@ruuvi.com](mailto:license@ruuvi.com).
+
+Ruuvi software projects are licensed using truly open licenses. No GPL variants. For more info, check our organization on [GitHub](http://github.com/ruuvi).

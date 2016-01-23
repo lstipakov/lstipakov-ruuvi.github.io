@@ -9,13 +9,13 @@ template: start.hbs
   <a href="/guide/getting-started/intro/ruuvitag">
     <li class="device" id="ruuvitag">
       <h3>RuuviTag</h3>
-      <img src="assets/images/ruuvitag_reva1.jpg"/>
+      <img src="assets/images/ruuvitag.jpg"/>
     </li>
   </a>
   <a href="/guide/getting-started/intro/ruuvitracker">
-    <li class="device">
+    <li class="device" id="ruuvitracker">
       <h3>RuuviTracker</h3>
-      <img src="assets/images/ruuvitracker_revc3.jpg"/>
+      <img src="assets/images/ruuvitracker.jpg"/>
     </li>
   </a>
 </ul>

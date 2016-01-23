@@ -7,30 +7,19 @@ order: 1
 ---
 
 # Introduction to THE GUIDE
-
-This guide will help you to tinker with the Ruuvi devices.
-
-
 {{#if ruuvitag}}
-[POWER ON MY RUUVITAG >](/guide/getting-started/start/ruuvitag/#step-1-power-on-your-device)
+This guide will help you with the Ruuvi devices.
+
+[POWER ON MY RUUVITAG >](/guide/getting-started/start/ruuvitag)
+
+This guide is partly under construction and we'll add more info in the {{{popup 'coming months' 'note' 'Thanks for your patience, friend.'}}}, but for now the best way to use the guide is:
+- Go through _Getting Started_
+- Check out _How to Build a Product_
+- Email [Lauri](mailto:lauri@ruuvi.com) to request an invite to [Ruuvi Slack team](http://ruuvi.com/blog/ruuvi-slack-com.html). All of our development discussion takes place over there.
+
+Click the arrow to the right of the screen to read on.
 {{/if}}
 
 {{#if ruuvitracker}}
-[POWER ON MY RUUVITRACKER >](/guide/getting-started/start/ruuvitracker/#step-1-power-on-your-device)
+Unfortunately RuuviTracker's documentation isn't ready. We're working on it and it'll be live {{{popup 'later' 'note' 'Thanks for your patience, friend.'}}}. In the meantime, you can read about <a href="/guide/getting-started/intro/ruuvitag"><li class="device" id="ruuvitag">RuuviTag</li></a>. 
 {{/if}}
-
-Or read on!
-
-
-The guide is broken down into three parts:
-- **Getting Started** goes over how to connect your device and then dives into some examples to get you used to the connected platform. If you've never played with connected hardware before, Getting Started is the section for you! It's filled with small {{{ popup 'footnotes' 'note' 'When you hover over or click these, you will get more info on the underlined word.'}}} that you can hover over or (on smaller screens and mobile) click or tap for more info. If you're an expert, you may want to take the first few chapters to connect your device, then move on Tools and Features.
-- **Tools and Features** details the different parts of the Ruuvi platform that come in handy as you build a connected product. It includes using Particle Dev, the Dashboard, the Command Line Interface (CLI) and more.
-- **How to Build a Product** is the final section. It reviews everything you need to do to take the connected device you've prototyped and take it to production.
-
-We'll fill in more parts of the guide in the {{{popup 'coming months' 'note' 'Thanks for your patience, friend.'}}}, but for now the best way to use the guide is:
-- Go through _Getting Started_
-- Review _Tools and Features_
-- Search _[the community](http://community.ruuvi.io)_ for cool examples and advice relevant to your exact project
-- Check out _How to Build a Product_ for final advice
-
-Ready to get started? Click the arrow to the right of the screen to read on.
