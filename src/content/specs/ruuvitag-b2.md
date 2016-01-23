@@ -30,10 +30,10 @@ Reset button and user button.
 RuuviTag has two user-programmable LEDs.
 
 ### Battery
-We've developed an innovative battery holder mechanism for the RuuviTag. It can hold **CR2430**, **CR2450** and **CR2477** Lithium coin cell batteries. The circuit board material (FR4) bends a bit and keeps the battery firmly on its place.
+We've developed an innovative battery holder mechanism for the RuuviTag. It can hold **CR2430**, **CR2450** and **CR2477** Lithium coin cell batteries. The circuit board material (FR4) bends a bit and keeps the battery firmly on its place. The device consumes ~1 micro ampere during sleep. This means that the battery life-time can be easily optimized to be up to 10 years.
 
 ### Reverse polarity protection
-It's not possible to break the device by attaching battery upside down. RuuviTag has an on-board high-efficiency reverse polarity protection circuitry.
+It's not possible to break the device by attaching the battery upside down. RuuviTag has an on-board high-efficiency reverse polarity protection circuitry. We're using a MOSFET transistor to protect the chip instead of commonly used diode protection (which has a poor effeciency).
 
 ### Debug port
 Altought it's possible to flash and debug RuuviTag Over-the-Air, we decided to provide a standard 0.05" pitch 10-pin ARM serial wire debug port. All the debug pins are also available on test pads on bottom layer.
