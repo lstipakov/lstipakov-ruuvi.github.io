@@ -1,5 +1,5 @@
 ---
-title: Unboxing
+title: Getting started
 template: guide.hbs
 columns: two
 order: 2

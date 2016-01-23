@@ -37,7 +37,7 @@ Building a hardware product is a complicated process and requires a lot of knowl
 - Mobile app development
 - Logistics
 
-If you don't have required expertise to handle these by yourself, we want to help. [Drop us a message](mailto:info@ruuvi.com) and tell more of your needs. If we design something like this for you, there won't be any license restrictions. It will be your own product.
+If you don't have required expertise to handle these by yourself, message us. We want to help. [Drop us a message](mailto:info@ruuvi.com) and tell more of your needs. If we design something for you, there won't be any license restrictions. It will be your own product.
 
 ### License
 Ruuvi hardware products are licensed using [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/4.0/) free culture license. This means you're allowed to
