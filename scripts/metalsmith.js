@@ -163,7 +163,7 @@ exports.metalsmith = function() {
       '/guide': '/guide/getting-started/intro',
       '/guide/ruuvitag/': '/guide/ruuvitag/start',
       '/guide/ruuvitracker/': '/guide/ruuvitracker/start',
-      '/datasheets': '/datasheets/kits/ruuvitag/',
+      '/datasheets': '/datasheets/ruuvitag-b2',
       '/guide/getting-started': '/guide/getting-started/intro',
       '/guide/how-to-build-a-product': '/guide/how-to-build-a-product/intro/',
       '/guide/tools-and-features': '/guide/tools-and-features/intro',

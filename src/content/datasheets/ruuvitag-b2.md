@@ -1,10 +1,9 @@
 ---
-word: Kits
-title: Ruuvi Kits Overview
+word: RuuviTag Rev.B2
+title: RuuviTag Rev.B2 Specsheet
 order: 1
 columns: 3
 template: datasheet.hbs
-devices: [ ruuvitag, ruuvitracker ]
 ---
 
 {{#if ruuvitracker}}
