@@ -2,7 +2,6 @@
 title: Code your own Firmware)
 template: guide.hbs
 columns: two
-devices: [ ruuvitag ]
 order: 3
 ---
 

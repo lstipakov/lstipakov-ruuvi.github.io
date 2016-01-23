@@ -2,7 +2,6 @@
 title: Contribute
 template: guide.hbs
 columns: two
-devices: [ ruuvitag, ruuvitracker ]
 order: 4
 ---
 
