@@ -110,8 +110,8 @@ exports.metalsmith = function() {
         pattern: 'reference/*md',
         sortBy: 'order'
       },
-      datasheet: {
-        pattern: 'datasheets/*.md',
+      spec: {
+        pattern: 'specs/*.md',
         sortBy: 'order'
       },
       support: {
@@ -189,8 +189,6 @@ exports.metalsmith = function() {
       "/ruuvitracker/examples" : "/guide/getting-started/examples/ruuvitracker",
       "/ruuvitracker/dev" : "/guide/tools-and-features/dev/ruuvitracker",
       "/ruuvitracker/dashboard" : "/guide/tools-and-features/dashboard/ruuvitracker",
-      "/ruuvitracker/hardware" : "/datasheets/ruuvitracker-datasheet",
-      "/ruuvitracker/shields" : "/datasheets/ruuvitracker-shields",
       "/ruuvitracker/ifttt" : "/guide/tools-and-features/ifttt/ruuvitracker",
       "/ruuvitracker/webhooks" : "/guide/tools-and-features/webhooks/ruuvitracker",
       "/ruuvitracker/hackathon" : "/guide/getting-started/hackathon/ruuvitracker",
@@ -237,7 +235,7 @@ exports.server = function(callback) {
           "${source}/assets/less/*.less": "assets/less/*.less",
           "../templates/reference.hbs": "content/reference/*.md",
           "../templates/guide.hbs": "content/guide/**/*.md",
-          "../templates/datasheet.hbs": "content/specs/*.md",
+          "../templates/spec.hbs": "content/specs/*.md",
           "../templates/support.hbs": "content/support/*.md",
           "${source}/assets/js/*.js" : true
         },
