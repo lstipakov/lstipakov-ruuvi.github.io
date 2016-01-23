@@ -7,9 +7,9 @@ order: 1
 
 # {{title}}
 
-Our primary goal at Ruuvi is to have fun by designing open sourced products you can tinker with. We truly love what we do and we're having so good time developing innovative products for you. 
+Our primary goal at Ruuvi is to have fun by designing open sourced products you can tinker with.
 
-In addition to hobbyists, also product creators (engineers and entrepreneurs) can use Ruuvi products to prototype their ideas and products. If Ruuvi product isn't exactly what you're looking for, it can be customized to meet your requirements. 
+In addition to hobbyists, also product creators (engineers and entrepreneurs) can use Ruuvi products to prototype their ideas and products. If Ruuvi products aren't exactly what you're looking for, they can be customized to meet your requirements. 
 
 ### Great, but what if we need help?
 

@@ -6,9 +6,7 @@ order: 2
 ---
 
 # Getting Started
-
 ## Unboxing
-
 ![](/assets/images/ruuvitag-box.jpg)
 Congratulations on being the owner of a brand new Ruuvi device! Go ahead and open the box.
 
