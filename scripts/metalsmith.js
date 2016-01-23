@@ -163,7 +163,7 @@ exports.metalsmith = function() {
       '/guide': '/guide/getting-started/intro',
       '/guide/ruuvitag/': '/guide/ruuvitag/start',
       '/guide/ruuvitracker/': '/guide/ruuvitracker/start',
-      '/datasheets': '/datasheets/ruuvitag-b2',
+      '/specs': '/specs/ruuvitag-b2',
       '/guide/getting-started': '/guide/getting-started/intro',
       '/guide/how-to-build-a-product': '/guide/how-to-build-a-product/intro/',
       '/guide/tools-and-features': '/guide/tools-and-features/intro',
@@ -180,13 +180,7 @@ exports.metalsmith = function() {
       "/ruuvitag/api" : "/reference/api",
       "/ruuvitag/javascript" : "/reference/javascript",
       "/ruuvitag/ios" : "/reference/ios",
-      "/ruuvitag/photon-datasheet" : "/datasheets/photon-datasheet",
-      "/ruuvitag/p1-datasheet" : "/datasheets/p1-datasheet",
-      "/ruuvitag/shields" : "/datasheets/photon-shields",
       "/ruuvitag/cli" : "/reference/cli",
-      "/ruuvitag/ifttt" : "/guide/tools-and-features/ifttt",
-      "/ruuvitag/webhooks" : "/guide/tools-and-features/webhooks",
-      "/ruuvitag/hackathon" : "/guide/tools-and-features/hackathon",
       "/ruuvitracker" : "/guide/getting-started/intro/ruuvitracker",
       "/ruuvitracker/start" : "/guide/getting-started/start/ruuvitracker",
       "/ruuvitracker/connect" : "/guide/getting-started/connect/ruuvitracker",
@@ -214,12 +208,6 @@ exports.metalsmith = function() {
       "/firmware" : "/reference/firmware",
       "/webhooks" : "/guide/tools-and-features/webhooks",
       "/hackathon" : "/guide/getting-started/hackathon",
-      "/ruuvitag-datasheet" : "/datasheets/photon-datasheet",
-      "/p1-datasheet" : "/datasheets/p1-datasheet",
-      "/hardware" : "/datasheets/ruuvitracker-datasheet",
-      "/ruuvitag-shields" : "/datasheets/photon-shields",
-      "/shields" : "/datasheets/ruuvitag-shields",
-      "/ruuvitag/hardware" : "/datasheets/photon-datasheet"
     }));
 
   return metalsmith;
@@ -249,7 +237,7 @@ exports.server = function(callback) {
           "${source}/assets/less/*.less": "assets/less/*.less",
           "../templates/reference.hbs": "content/reference/*.md",
           "../templates/guide.hbs": "content/guide/**/*.md",
-          "../templates/datasheet.hbs": "content/datasheets/*.md",
+          "../templates/datasheet.hbs": "content/specs/*.md",
           "../templates/support.hbs": "content/support/*.md",
           "${source}/assets/js/*.js" : true
         },
