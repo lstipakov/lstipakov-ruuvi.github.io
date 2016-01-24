@@ -34,10 +34,10 @@ Insert a battery (CR2450 or CR2477) so that metallic battery connnector touches 
 ### Step 2: Upload an application
 1. Check what ready-made example applications [we have to offer](/guide/getting-started/examples).
 2. Open the mobile app on your phone and tap **DFU** icon.
-3. Select **application file**. Correct file type is **Distribution package (ZIP)**. By default, the application tries to find the file from your Dropbox folder. It it's convenient for you, put it there and select it.
-4. Hit **Select device** button. The phone scans nearby Bluetooth Smart devices and **DFUTarg** will pop up on your screen. Tap it.
+3. Select **application file**. Correct file type is **Distribution package (ZIP)**. By default, the application tries to find the file from your Dropbox folder. If it's convenient for you, put it there and select it.
+4. Hit **Select device** button. The phone scans nearby Bluetooth Smart devices and **DfuTarg** will pop on your screen. Select it.
 5. Press **UPLOAD** and the magic happens!
 
 ### Step 3: It's alive!
 
-After Over-the-Air _(OTA)_ Device Firmware Update _(DFU)_ is completed, RuuviTag starts to run the application code. Success!
+After Over-the-Air _(OTA)_ Device Firmware Update _(DFU)_ is completed, RuuviTag starts to run the application code. Success! If you decided to upload one of the beacon example applications, now you're able to locate the RuuviTag by using any applicatin capable to locate beacons (Eddystone/iBeacon/AltBeacon).
