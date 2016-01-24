@@ -32,11 +32,11 @@ In this example, we will start the device for the first time and upload a demo a
 Insert a battery (CR2450 or CR2477) so that metallic battery connnector touches GND pad of the battery. One of the LEDs should be lit (on, not blinking). After inserting the battery, press _Reset button_ once to make sure the device booted successfully. Now the device is in operational mode and pre-installed bootloader software is running.
 
 ### Step 2: Upload an application
-
-1. Open the mobile app on your phone and tap **DFU** icon.
-2. Select **application file**. Correct file type is **Distribution package (ZIP)**. By default, the application tries to find the file from your Dropbox folder. It it's convenient for you, put it there and select it. You can find the demo distribution package from [GitHub](https://github.com/ruuvi/ruuvitag_fw/tree/master/production_builds).
-3. Hit **Select device** button. The phone scans nearby Bluetooth Smart devices and **DFUTarg** will pop up on your screen. Tap it.
-4. Press **UPLOAD** and the magic happens!
+1. Check what ready-made example applications [we have to offer](/guide/getting-started/examples).
+2. Open the mobile app on your phone and tap **DFU** icon.
+3. Select **application file**. Correct file type is **Distribution package (ZIP)**. By default, the application tries to find the file from your Dropbox folder. It it's convenient for you, put it there and select it.
+4. Hit **Select device** button. The phone scans nearby Bluetooth Smart devices and **DFUTarg** will pop up on your screen. Tap it.
+5. Press **UPLOAD** and the magic happens!
 
 ### Step 3: It's alive!
 

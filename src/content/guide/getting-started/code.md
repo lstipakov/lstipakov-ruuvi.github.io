@@ -2,7 +2,7 @@
 title: Code your own Firmware
 template: guide.hbs
 columns: two
-order: 3
+order: 4
 ---
 
 # Hack

@@ -2,7 +2,7 @@
 title: Contribute
 template: guide.hbs
 columns: two
-order: 4
+order: 5
 ---
 
 # How to contribute to Ruuvi's projects?
