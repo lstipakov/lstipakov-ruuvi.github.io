@@ -5,7 +5,7 @@ columns: two
 order: 5
 ---
 
-# How to contribute to Ruuvi's projects?
+# How to contribute to Ruuvi projects?
 Ruuvi products and projects are 100% open-source. You might find something you'd like changed, a feature you'd like implemented, or a bug you see a fix for. If so, you can create a pull request or an issue on one of our GitHub repositories. Travel to [GitHub](https://github.com/ruuvi) to see what we have!
 
 ## Our repositories
@@ -26,7 +26,7 @@ Ruuvi products and projects are 100% open-source. You might find something you'd
 The [`ruuvi.github.io`](https://github.com/ruuvi/ruuvi.github.io) repo contains this [documentation](/guide/getting-started/intro). If you want something to be added or changed, just make a pull request.
 
 ## Ruuvi Community
-If you would like to join the Ruuvi Community, send an informal email to [Lauri](mailto:lauri@ruuvi.com) to request an invite to our [Slack team](http://ruuvi.com/blog/ruuvi-slack-com.html). All the development discussion is over there.
+If you would like to join the Ruuvi Community, send [us](mailto:slack@ruuvi.com) an informal email to request an invite to our [Slack team](http://ruuvi.slack.com). All the development discussion is over there.
 
 ## Using GitHub
 Go [here](https://guides.github.com/introduction/flow/index.html) to get a sense of Github flow. We also suggest the [Github for Desktop](https://desktop.github.com/) application, which has a great built-in tutorial on forking, editing, merging, and creating a pull request.

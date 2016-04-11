@@ -12,9 +12,4 @@ template: start.hbs
       <img src="assets/images/ruuvitag.jpg"/>
     </li>
   </a>
-    <li class="device">
-      <h3>RuuviTracker</h3>
-    <img src="assets/images/ruuvitracker.jpg"/>
-    </li>
-  </a>
 </ul>

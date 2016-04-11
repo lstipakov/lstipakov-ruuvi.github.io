@@ -5,7 +5,7 @@ template: guide.hbs
 order: 1
 ---
 
-# {{title}}
+# How to create a product of your own?
 
 Our primary goal at Ruuvi is to have fun by designing open sourced products you can tinker with.
 
@@ -13,7 +13,7 @@ In addition to hobbyists, also product creators (engineers and entrepreneurs) ca
 
 ### Great, but what if we need help?
 
-Building a hardware product is a complicated process and requires a lot of knowlegde on many areas. To design and produce a circuit board, you have to complete these steps:
+Building a hardware product is a complicated process and requires knowlegde on many areas. To design and produce a circuit board, you need to complete these steps:
 
 - Requirement specifications
 - Technical specifications
@@ -31,13 +31,13 @@ Building a hardware product is a complicated process and requires a lot of knowl
 ...and that's not all. Usually you'll need to pay attention to these:
 
 - Mechanical engineering (enclosure)
-- CE/FCC approvals
+- CE/FCC/Bluetooth approvals
 - Firmware development
 - Web development
 - Mobile app development
 - Logistics
 
-If you don't have required expertise to handle these by yourself, message us. We want to help. [Drop us a message](mailto:info@ruuvi.com) and tell more of your needs. If we design something for you, there won't be any license restrictions. It will be your own product.
+If you don't have required expertise to handle these by yourself, [drop us a message](mailto:info@ruuvi.com). We want to help. If we design something for you, there won't be any license restrictions. It will be a product of your own.
 
 ### License
 Ruuvi hardware products are licensed using [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/4.0/) free culture license. This means you're allowed to
