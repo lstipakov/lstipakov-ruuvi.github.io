@@ -6,7 +6,7 @@ order: 3
 ---
 
 # Example Firmware Applications
-We've prepared a few ready-made example applications for you to use. Everything can be found from our [GitHub repo](http://github.com/ruuvi/ruuvitag_fw). Check the folder called *builds*.
+We've prepared a few ready-made example applications for you to use. Everything can be found from our [GitHub repo](http://github.com/ruuvi/ruuvitag_fw). Check the folder called **_builds_**.
 
 ### Ruuvi Blink
 Our simpliest example code blinks the LEDs.

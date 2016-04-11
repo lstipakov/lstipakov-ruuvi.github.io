@@ -7,11 +7,11 @@ order: 1
 
 # How to create a product of your own?
 
-Our primary goal at Ruuvi is to have fun by designing open sourced products you can tinker with.
+Our primary goal at Ruuvi is to have fun by designing cool open sourced products.
 
-In addition to hobbyists, also product creators (engineers and entrepreneurs) can use Ruuvi products to prototype their ideas and products. If Ruuvi products aren't exactly what you're looking for, they can be customized to meet your requirements. 
+In addition to hobbyists, also product creators (engineers and entrepreneurs) can use Ruuvi products to prototype their ideas and products. If Ruuvi products aren't exactly what you're looking for, they can be easily customized to meet your requirements. 
 
-### Great, but what if we need help?
+### Great, but what if we need help or we cannot use the Creative COmmons license?
 
 Building a hardware product is a complicated process and requires knowlegde on many areas. To design and produce a circuit board, you need to complete these steps:
 
@@ -37,7 +37,7 @@ Building a hardware product is a complicated process and requires knowlegde on m
 - Mobile app development
 - Logistics
 
-If you don't have required expertise to handle these by yourself, [drop us a message](mailto:info@ruuvi.com). We want to help. If we design something for you, there won't be any license restrictions. It will be a product of your own.
+If you don't have required expertise to handle these by yourself, [email us](mailto:info@ruuvi.com). We want to help. If we design something for you, there won't be any license restrictions. It will be a product of your own.
 
 ### License
 Ruuvi hardware products are licensed using [Creative Commons Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/4.0/) free culture license. This means you're allowed to

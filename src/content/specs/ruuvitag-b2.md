@@ -18,7 +18,7 @@ The nRF52832 SoC is an extremely power efficient device that can run from a supp
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ja3USlRVAok?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### [Bosch BME280 environmental sensor](http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bme280/bme280_1)
-The BME280 is an integrated environmental sensor developed specifically for mobile applications where size and low power consumption are key design constraints. The unit combines individual high linearity, high accuracy sensors for pressure, humidity and temperature in an 8-pin metal-lid 2.5 x 2.5 x 0.93 mm3 LGA package, designed for low current consumption (3.6 μA @1Hz), long term stability and high EMC robustness. The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.  
+The BME280 is an integrated environmental sensor developed specifically for mobile applications where size and low power consumption are key design constraints. The unit combines individual high linearity, high accuracy sensors for pressure, humidity and temperature in an 8-pin metal-lid 2.5 x 2.5 x 0.93 mm^3 LGA package, designed for low current consumption (3.6 μA @1Hz), long term stability and high EMC robustness. The humidity sensor features an extremely fast response time which supports performance requirements for emerging applications such as context awareness, and high accuracy over a wide temperature range. The pressure sensor is an absolute barometric pressure sensor with features exceptionally high accuracy and resolution at very low noise. The integrated temperature sensor has been optimized for very low noise and high resolution. It is primarily used for temperature compensation of the pressure and humidity sensors, and can also be used for estimating ambient temperature.  
 <iframe width="640" height="360" src="https://www.youtube.com/embed/0XuL2fY7_NQ?rel=0" frameborder="0" allowfullscreen></iframe>
   
 ### [STMicroelectronics LIS3DH accelerometer](http://www.st.com/web/catalog/sense_power/FM89/SC444/PF250725?icmp=pf250725_pron_pr_feb2014)
@@ -43,7 +43,7 @@ We've developed an innovative battery holder mechanism for the RuuviTag. It can 
 It's not possible to break the device by attaching the battery upside down. RuuviTag has an on-board high-efficiency reverse polarity protection circuitry. We're using a MOSFET transistor to protect the chip instead of commonly used diode protection (which has a poor effeciency).
 
 ### Debug port
-Althought it's possible to flash and debug RuuviTag Over-the-Air, we decided to provide a standard 0.05" pitch 10-pin ARM serial wire debug port. All the debug pins are also available on test pads on bottom layer.
+Althought it's possible to flash and debug RuuviTag Over-the-Air, we decided to provide a standard 0.05" pitch 10-pin ARM serial wire debug port. All the debug pins are also available on test pads on bottom layer. Check the [HW repository](http://github.com/ruuvi/ruuvitag_hw) for more info.
 
 ### General Purpose IO pins
-It's possible to connect, for example, additional sensors to RuuviTag.
+It's possible to connect, for example, additional sensors to RuuviTag. I2C, SPI, UART etc. buses are available for evaluation.
