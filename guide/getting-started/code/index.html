@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="two-columns">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  
+  <title>Ruuvi Guides | Code your own Firmware</title>
+  
+  <!-- Spark theme mods -->
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/49057/Dashboard/style.css?9t9e91">
+  
+  <!-- GOTHAM YO -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6107112/665726/css/fonts.css" />
+  
+  <!-- Meta -->
+  <meta content="Ruuvi Documentation" property="og:title">
+  <meta content="Documentation for Ruuvi devices." name="description">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon2.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="docs" data-level>
+    <div class='header'>
+      <div class='left'>
+        <div class="toggle-nav">
+          <a href="#" class="subnav-link toggle-navigation">
+            <i class="ion-navicon" title="show/hide the navigation"></i>
+          </a>
+        </div>
+        <a href="http://ruuvi.com">
+          <img src="/assets/images/ruuvi_logo.png" id="logo">
+        </a>
+        <div class="sections">
+          <a class="nav active" href="/guide">Guide</a>
+          <a class="nav " href="/specs">Specs</a>
+        </div>
+        <div class="dropdown mobile-only">
+          <a id="dLabel" data-target="#" class="nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Guide
+            <i class="icon ion-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="/specs">Specs</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="search-input-wrapper">
+            <i class="ion-search"></i>
+            <input class="search-box" type="text" placeholder="Search" value=""/>
+          </div>
+          <div class="search-results">
+          </div>
+        </div>
+      </div>
+      <div class='right'>
+        <a href='https://github.com/ruuvi/ruuvi.github.io/tree/layout/src/content/guide/getting-started/code.mdcode.md' class="nav" target="_blank"><i class="ion-edit"></i>Edit</a>
+      </div>
+    </div>
+
+    <div class='content-root'>
+      <div class='menubar'>
+
+      <ul class="nav guide-menu">
+        <li data-level="1" class="guide-section active-section">
+          <h3 class="guide-section-titles" >Getting Started</h3>
+            <ol type="1">
+                <li class="top-level " data-level="1.1">
+                    <a href="/guide/getting-started/intro.mdintro">Introduction</a>
+                </li>
+                <li class="top-level " data-level="1.2">
+                    <a href="/guide/getting-started/start.mdstart">Getting started</a>
+                </li>
+                <li class="top-level " data-level="1.3">
+                    <a href="/guide/getting-started/examples.mdexamples">Ready-made examples</a>
+                </li>
+                <li class="top-level active" data-level="1.4">
+                    <span>Code your own Firmware</span>
+                      <i id="toggle-in-page-nav" class="ion-minus"></i>
+                </li>
+                    <div class="in-page-toc-container">
+                      <ul class="nav in-page-toc show">
+                        <li class="middle-level" data-nav="code-your-own-firmware-YbES"><a href="code-your-own-firmware" data-menu-href="code-your-own-firmware-YbES">Code your own firmware</a></li>
+                        <li class="middle-level" data-nav="create-a-mobile-application-glIJ"><a href="create-a-mobile-application" data-menu-href="create-a-mobile-application-glIJ">Create a mobile application</a></li>
+                      </ul>
+                    </div>
+                <li class="top-level " data-level="1.5">
+                    <a href="/guide/getting-started/contribute.mdcontribute">Contribute</a>
+                </li>
+            </ol>
+          </li>
+        <li data-level="2" class="guide-section ">
+          <h3 class="guide-section-titles" >How To Build A Product</h3>
+            <ol type="1">
+                <li class="top-level " data-level="2.1">
+                    <a href="/guide/how-to-build-a-product/intro.mdintro">Introduction</a>
+                </li>
+            </ol>
+          </li>
+      </ul>
+      </div>
+      <div class="page-body">
+        <div class='content-inner'>
+          <div class="content" >
+            <h1 id="programming" data-href="programming-YMbJ">Programming<a href="#programming" class="header-permalinks" data-menu-href="programming-YMbJ"><i class="ion-link"></i></a></h1><h3 id="code-your-own-firmware" data-href="code-your-own-firmware-YbES">Code your own firmware<a href="#code-your-own-firmware" class="header-permalinks" data-menu-href="code-your-own-firmware-YbES"><i class="ion-link"></i></a></h3><p>RuuviTag firmware projects can be used as a template for your own program. Everything is on <a href="http://github.com/ruuvi/ruuvitag_fw">GitHub</a>.</p>
+<p>A great place to find help and reference code projects is Nordic Semiconductor's <a href="https://github.com/NordicSemiconductor">GitHub organization</a>. You should also check their <a href="devzone.nordicsemi.com">DevZone</a>. And remember to join our <a href="http://ruuvi.slack.com">Slack team</a> by <a href="mailto:slack@ruuvi.com">requesting</a> an invite.</p>
+<h3 id="create-a-mobile-application" data-href="create-a-mobile-application-glIJ">Create a mobile application<a href="#create-a-mobile-application" class="header-permalinks" data-menu-href="create-a-mobile-application-glIJ"><i class="ion-link"></i></a></h3><p>The most common use case for beacons is to read data they're broadcasting using a mobile phone. You can find many ready-made application with beacon functionality from Google Play / App Store. There are also several open-source projects you can use as a starting point if you would like to create your own.</p>
+
+            <div class="mobile-arrows">
+                <a href="/guide/getting-started/examples.mdexamples" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+                <a href="/guide/getting-started/contribute.mdcontribute" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-arrows">
+            <a href="/guide/getting-started/examples.mdexamples" class="arrow previous-arrow"><i class="ion-chevron-left"></i></a>
+            <a href="/guide/getting-started/contribute.mdcontribute" class="arrow next-arrow"><i class="ion-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- SEGMENT -->
+    <!-- Let me embed vines -->
+    <script async src="https://platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+    
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- Vendor theme mods -->
+    <script src='/assets/js/jquery-styling.js'></script>
+    <script src='/assets/js/bootstrap-dropdown.js'></script>
+    <script src='/assets/js/prettify.js'></script>
+    <script src='/assets/js/jquery.waypoints.js'></script>
+    <script src='/assets/js/jquery.waypoints.inview.js'></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="/assets/js/lunr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="/assets/js/precompiled.js"></script>
+    <script src='/assets/js/docs.js'></script>
+    <script src='/assets/js/animated-ruuvitracker.js'></script>
+    
+    <!-- Live Reload -->
+    
+</body>
+</html>
